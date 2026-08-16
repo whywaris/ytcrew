@@ -5,7 +5,7 @@ import { ToolEditForm } from "@/components/admin/tool-edit-form";
 import { DbTool, DbCategory } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Edit Tool | YT Crew Admin",
+  title: "Edit Tool",
 };
 
 interface PageProps {

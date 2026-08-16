@@ -6,10 +6,8 @@ import {
   UploadCloud,
   Download,
   Sliders,
-  Sparkles,
   AlertCircle,
   RefreshCw,
-  Eye,
   Maximize2,
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";

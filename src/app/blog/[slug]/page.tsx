@@ -12,6 +12,8 @@ import { processBlogContent, splitContentForAd } from "@/lib/blog-utils";
 import { DbBlogPost } from "@/types";
 import { BookOpen, Calendar, User } from "lucide-react";
 
+export const runtime = "edge";
+
 interface PageProps {
   params: Promise<{ slug: string }>;
 }

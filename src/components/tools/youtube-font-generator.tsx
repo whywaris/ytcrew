@@ -5,9 +5,6 @@ import {
   Type,
   Copy,
   Check,
-  Sparkles,
-  RefreshCw,
-  Search,
   Filter,
   CheckCheck,
 } from "lucide-react";

@@ -1,12 +1,10 @@
 "use client";
 
 import * as React from "react";
-import { z } from "zod";
 import {
   Clock,
   CheckCircle2,
   Sparkles,
-  RefreshCw,
   TrendingUp,
   Target,
   Award,
@@ -15,7 +13,6 @@ import {
   Eye,
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const YPP_WATCH_TIME_GOAL = 4000; // 4,000 public watch hours
@@ -88,13 +85,6 @@ export function YouTubeWatchTimeCalculator() {
   React.useEffect(() => {
     calculateWatchTime();
   }, [calculateWatchTime]);
-
-  const handleReset = () => {
-    setViews("0");
-    setDurationMinutes("0");
-    setDurationSeconds("0");
-    setDirectHours("0");
-  };
 
   const isMonetized = totalHours >= YPP_WATCH_TIME_GOAL;
 

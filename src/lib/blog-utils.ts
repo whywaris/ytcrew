@@ -78,7 +78,7 @@ export function processBlogContent(html: string): {
   );
 
   // Wrap tables in responsive container if not already wrapped
-  let finalHtml = processedHtml.replace(
+  const finalHtml = processedHtml.replace(
     /(?:<div class="table-wrapper">)?(<table[\s\S]*?<\/table>)(?:<\/div>)?/gi,
     '<div class="table-wrapper">$1</div>'
   );

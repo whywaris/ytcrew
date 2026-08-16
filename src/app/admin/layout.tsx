@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AdminLayoutWrapper } from "@/components/layout/admin-layout-wrapper";
 
 export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: {

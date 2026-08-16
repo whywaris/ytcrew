@@ -7,7 +7,6 @@ import {
   Download,
   Eye,
   EyeOff,
-  Sparkles,
   AlertCircle,
   Maximize2,
   RefreshCw,
@@ -16,7 +15,6 @@ import {
   ZoomOut,
   Move,
   RotateCcw,
-  CheckCircle2,
 } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

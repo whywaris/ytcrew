@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { z } from "zod";
 import {
   MessageSquare,
   Sparkles,
@@ -24,13 +23,6 @@ import {
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
-const commentSchema = z.object({
-  author: z.string().min(1, "Author name is required").max(50, "Name too long"),
-  comment: z.string().min(1, "Comment text is required").max(500, "Comment too long"),
-  likes: z.number().int().min(0, "Likes cannot be negative"),
-  timeAgo: z.string().min(1, "Time is required"),
-});
 
 interface CommentTemplate {
   author: string;

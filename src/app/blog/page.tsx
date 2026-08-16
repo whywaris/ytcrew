@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const runtime = "edge";
+
 export default async function BlogListingPage() {
   let posts: DbBlogPost[] = [];
 
