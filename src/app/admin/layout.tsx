@@ -5,8 +5,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | YT Crew Admin",
-    default: "Overview | YT Crew Admin",
+    template: "%s ",
+    default: "Overview",
   },
   robots: {
     index: false,

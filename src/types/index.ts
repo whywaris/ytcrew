@@ -118,3 +118,38 @@ export interface AnnouncementBarConfig {
   is_active: boolean;
   updated_at?: string;
 }
+
+/**
+ * YouTube Automation Tools Directory Types
+ */
+export type AutomationToolCategory =
+  | "niche_research"
+  | "script_writing"
+  | "voiceover"
+  | "video_editing"
+  | "ai_avatar_faceless_video"
+  | "thumbnail_and_design"
+  | "captions_and_subtitles"
+  | "seo_and_research"
+  | "channel_growth_analytics"
+  | "audio_and_music"
+  | "stock_footage_media_library";
+
+export type AutomationToolPricing = "free" | "paid" | "freemium";
+
+export interface DbAutomationTool {
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  category: AutomationToolCategory;
+  logo_url: string | null;
+  website_url: string;
+  affiliate_url: string | null;
+  pricing: AutomationToolPricing;
+  is_featured: boolean;
+  status: "active" | "inactive";
+  created_at: string;
+  updated_at?: string;
+}
+

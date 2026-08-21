@@ -7,13 +7,13 @@ import { DbBlogPost } from "@/types";
 import { BookOpen, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "YouTube Creator Blog & Growth Guides | YT Crew",
+  title: "YouTube Growth Tips & Guides for Creators | YT Crew Blog",
   description:
-    "Free guides, tutorials, and growth strategies for YouTube creators. Learn how to grow your channel, optimize video SEO, and boost retention.",
+    "Explore expert tips and guides to grow your YouTube channel faster — SEO, content strategy, audience growth, and creator insights, all in one place.",
   openGraph: {
-    title: "YouTube Creator Blog & Growth Guides | YT Crew",
+    title: "YouTube Growth Tips & Guides for Creators | YT Crew Blog",
     description:
-      "Free guides, tutorials, and growth strategies for YouTube creators. Learn how to grow your channel, optimize video SEO, and boost retention.",
+      "Explore expert tips and guides to grow your YouTube channel faster — SEO, content strategy, audience growth, and creator insights, all in one place.",
     type: "website",
   },
 };
@@ -54,10 +54,10 @@ export default async function BlogListingPage() {
               <span>Creator Knowledge Base</span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-foreground">
-              YouTube Guides & Tutorials
+              YouTube Growth Tips & Guides
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Actionable guides, growth tactics, and SEO strategies built to help YouTube creators scale their channels.
+              Practical guides and creator insights to help you grow your channel, boost views, and rank higher on YouTube.
             </p>
           </div>
         </section>
@@ -174,7 +174,7 @@ export default async function BlogListingPage() {
               </p>
               <div className="pt-2">
                 <Link
-                  href="/tools"
+                  href="/"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
                 >
                   <span>Explore Free Tools</span>

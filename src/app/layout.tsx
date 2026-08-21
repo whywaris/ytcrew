@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
+import { GoogleAnalytics } from "@/components/analytics/google-analytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,9 +18,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YT Crew - 86+ Free YouTube Creator Tools",
+  title: "YT Crew – 100% Free YouTube Tools for Creators",
   description:
-    "Free online tools for YouTube creators: thumbnail resizers, title generators, tag extractors, channel audit, and more.",
+    "YT Crew brings free tools for YouTube creators in one place — from keyword research to thumbnail downloads. Simple, fast, and free to use.",
 };
 
 export default function RootLayout({
@@ -40,8 +41,10 @@ export default function RootLayout({
         >
           <AnnouncementBar />
           {children}
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+

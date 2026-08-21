@@ -17,7 +17,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "About Us | YT Crew",
+  title: "About Us",
   description:
     "Learn about YT Crew — our mission to provide 86+ completely free YouTube tools and guides to help creators save time, rank higher, and grow their channels without expensive software.",
 };
@@ -214,7 +214,7 @@ export default function AboutPage() {
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3 relative z-10">
-              <Link href="/tools">
+              <Link href="/">
                 <Button size="lg" className="gap-2 bg-primary hover:bg-primary/90 text-white font-bold shadow-lg shadow-indigo-500/25">
                   <Wrench className="h-4 w-4" />
                   <span>Explore All Tools</span>

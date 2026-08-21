@@ -5,7 +5,7 @@ import { DbBlogPost } from "@/types";
 import { BookOpen, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Manage Blog | YT Crew Admin",
+  title: "Manage Blog",
 };
 
 export default async function AdminManageBlogPage() {

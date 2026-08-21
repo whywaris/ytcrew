@@ -5,7 +5,7 @@ import { AnnouncementBarConfig } from "@/types";
 import { Megaphone, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Announcement Bar | YT Crew Admin",
+  title: "Announcement Bar",
 };
 
 export default async function AdminAnnouncementPage() {

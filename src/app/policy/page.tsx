@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | YT Crew",
+  title: "Privacy Policy",
   description:
     "Read the YT Crew Privacy Policy to understand how we collect, process, and protect your information when using our free YouTube creator tools.",
 };

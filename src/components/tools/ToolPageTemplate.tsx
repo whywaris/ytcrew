@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ShieldCheck, Zap, Sparkles } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { SocialShare } from "@/components/blog/social-share";
 import { ToolHeader } from "./tool-header";
 import { ToolHowTo } from "./tool-how-to";
 import { ToolFAQ } from "./tool-faq";
@@ -31,7 +32,7 @@ export interface ToolPageTemplateProps {
 /**
  * Reusable Tool Page Template matching the structure defined in CLAUDE.md:
  * - SEO: Invisible BreadcrumbList JSON-LD schema (Home > Tools > Tool Name)
- * - Visual: Tool Header (H1 + short desc) → Tool Interface (slot) → Trust Bar
+ * - Visual: Tool Header (H1 + short desc) → Tool Interface (slot) → Social Share → Trust Bar
  *   → How to Use (numbered steps) → About This Tool (SEO content) → FAQ (with FAQ schema) → Related Tools
  */
 export function ToolPageTemplate({
@@ -64,12 +65,6 @@ export function ToolPageTemplate({
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Tools",
-        "item": `${siteUrl}/tools`,
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
         "name": title,
         "item": toolUrl,
       },
@@ -98,6 +93,24 @@ export function ToolPageTemplate({
 
         {/* In-Tool Result Ad Slot Placement */}
         <AdSlot slotName="in_tool_result" />
+
+        {/* Social Share Section */}
+        <div className="my-6 py-4 px-6 rounded-2xl border border-border/60 bg-card/40 backdrop-blur-xs flex flex-col items-center justify-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
+          <div>
+            <p className="text-xs sm:text-sm font-semibold text-foreground">
+              Found this useful? Share it:
+            </p>
+            <p className="text-[11px] sm:text-xs text-muted-foreground">
+              Help other creators discover this free tool
+            </p>
+          </div>
+          <SocialShare
+            url={toolUrl}
+            title={`${title} - Free YouTube Tool`}
+            orientation="horizontal"
+            className="flex-wrap justify-center"
+          />
+        </div>
 
         {/* Trust Bar */}
         <div className="my-8 py-3.5 px-6 rounded-xl border border-border/60 bg-card/40 flex flex-wrap items-center justify-around gap-4 text-xs text-muted-foreground">

@@ -5,7 +5,7 @@ import { BlogPostForm } from "@/components/admin/blog-post-form";
 import { DbBlogPost } from "@/types";
 
 export const metadata: Metadata = {
-  title: "Edit Post | YT Crew Admin",
+  title: "Edit Post",
 };
 
 interface PageProps {

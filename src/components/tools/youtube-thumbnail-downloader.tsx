@@ -6,14 +6,12 @@ import {
   Download,
   Copy,
   Check,
-  ExternalLink,
   Sparkles,
   RefreshCw,
   AlertCircle,
   Video,
-  Image as ImageIcon,
 } from "lucide-react";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -35,9 +33,9 @@ interface ThumbnailOption {
   name: string;
   resolution: string;
   dimensions: string;
+  fileSize: string;
   url: string;
   badge: string;
-  qualityDesc: string;
 }
 
 export function YouTubeThumbnailDownloader() {
@@ -78,47 +76,47 @@ export function YouTubeThumbnailDownloader() {
       {
         key: "maxres",
         name: "Maximum Resolution (HD)",
-        resolution: "1080p / 720p HD",
-        dimensions: "1280 × 720 px (or 1920 × 1080)",
+        resolution: "Full HD",
+        dimensions: "1280 × 720 px",
+        fileSize: "~150 KB",
         url: `https://img.youtube.com/vi/${vidId}/maxresdefault.jpg`,
         badge: "Best Quality",
-        qualityDesc: "Crisp full-HD resolution for banners and social promotion.",
       },
       {
         key: "hq",
-        name: "High Quality (HQ)",
-        resolution: "HQ Standard",
+        name: "High Quality",
+        resolution: "HQ",
         dimensions: "480 × 360 px",
+        fileSize: "~45 KB",
         url: `https://img.youtube.com/vi/${vidId}/hqdefault.jpg`,
-        badge: "High Res",
-        qualityDesc: "Standard high resolution available for 100% of YouTube videos.",
+        badge: "Standard HQ",
       },
       {
         key: "sd",
-        name: "Standard Definition (SD)",
-        resolution: "SD Standard",
+        name: "Standard Definition",
+        resolution: "SD",
         dimensions: "640 × 480 px",
+        fileSize: "~60 KB",
         url: `https://img.youtube.com/vi/${vidId}/sddefault.jpg`,
-        badge: "SD",
-        qualityDesc: "Clear standard-definition format.",
+        badge: "Standard Def",
       },
       {
         key: "mq",
-        name: "Medium Quality (MQ)",
+        name: "Medium Quality",
         resolution: "Medium",
         dimensions: "320 × 180 px",
+        fileSize: "~20 KB",
         url: `https://img.youtube.com/vi/${vidId}/mqdefault.jpg`,
-        badge: "Medium",
-        qualityDesc: "Compact file size suitable for previews and widgets.",
+        badge: "Compact",
       },
       {
         key: "default",
-        name: "Normal Thumbnail",
-        resolution: "Small",
+        name: "Default Thumbnail",
+        resolution: "Normal",
         dimensions: "120 × 90 px",
+        fileSize: "~8 KB",
         url: `https://img.youtube.com/vi/${vidId}/default.jpg`,
-        badge: "Low Res",
-        qualityDesc: "Default low-res thumbnail stream icon.",
+        badge: "Small",
       },
     ];
 
@@ -167,20 +165,14 @@ export function YouTubeThumbnailDownloader() {
     setError(null);
   };
 
+  const heroThumbnail = thumbnails[0];
+  const gridThumbnails = thumbnails.slice(1);
+
   return (
     <div className="space-y-6">
       <Card className="border-border bg-card shadow-lg shadow-black/10">
-        <CardHeader className="pb-4">
-          <CardTitle className="flex items-center gap-2 text-xl font-bold text-foreground">
-            <ImageIcon className="h-5 w-5 text-primary" />
-            <span>YouTube Thumbnail Downloader</span>
-          </CardTitle>
-          <CardDescription>
-            Download HD and 4K YouTube video thumbnails in all available resolutions (1080p, 720p, 480p, and SD) with zero quality loss.
-          </CardDescription>
-        </CardHeader>
-
-        <CardContent className="space-y-6">
+        <CardContent className="p-6 space-y-6">
+          {/* Input Form Section */}
           <form onSubmit={handleFetchThumbnails} className="space-y-4">
             <div className="space-y-2">
               <label
@@ -234,8 +226,8 @@ export function YouTubeThumbnailDownloader() {
             </div>
           </form>
 
-          {/* Results Display */}
-          {thumbnails.length > 0 && (
+          {/* Results: Hero + Grid Layout */}
+          {thumbnails.length > 0 && heroThumbnail && (
             <div className="mt-8 pt-6 border-t border-border space-y-6 animate-in fade-in duration-300">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-semibold text-foreground">
@@ -246,95 +238,142 @@ export function YouTubeThumbnailDownloader() {
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {thumbnails.map((thumb) => {
+              {/* 1. HERO THUMBNAIL (Max Resolution HD) */}
+              <div className="p-4 sm:p-5 rounded-xl border border-primary/30 bg-primary/5 space-y-3 shadow-md">
+                <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-border bg-black/40 shadow-inner">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={heroThumbnail.url}
+                    alt={heroThumbnail.name}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      (e.target as HTMLElement).style.opacity = "0.6";
+                    }}
+                  />
+                </div>
+
+                {/* Compact Label Row + Action Buttons */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+                  <div className="flex flex-wrap items-center gap-2 text-xs">
+                    <span className="font-bold text-foreground text-sm">
+                      {heroThumbnail.name}
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30 font-semibold">
+                      {heroThumbnail.badge}
+                    </span>
+                    <span className="text-muted-foreground font-mono">
+                      {heroThumbnail.dimensions}
+                    </span>
+                    <span className="text-muted-foreground">
+                      • {heroThumbnail.fileSize}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2 shrink-0">
+                    <Button
+                      type="button"
+                      variant={copiedKey === heroThumbnail.key ? "secondary" : "outline"}
+                      size="sm"
+                      onClick={() => handleCopyUrl(heroThumbnail.url, heroThumbnail.key)}
+                      className="gap-1.5 text-xs h-8 px-3"
+                    >
+                      {copiedKey === heroThumbnail.key ? (
+                        <>
+                          <Check className="h-3.5 w-3.5 text-success" />
+                          <span className="text-success">Copied</span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="h-3.5 w-3.5" />
+                          <span>Copy</span>
+                        </>
+                      )}
+                    </Button>
+
+                    <Button
+                      type="button"
+                      variant="primary"
+                      size="sm"
+                      disabled={downloadingKey === heroThumbnail.key}
+                      onClick={() => handleDownloadThumbnail(heroThumbnail)}
+                      className="gap-1.5 text-xs h-8 px-3"
+                    >
+                      <Download className="h-3.5 w-3.5" />
+                      <span>{downloadingKey === heroThumbnail.key ? "Downloading..." : "Download"}</span>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2. COMPACT 2-COLUMN GRID (Remaining Resolutions) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {gridThumbnails.map((thumb) => {
                   const isCopied = copiedKey === thumb.key;
                   const isDownloading = downloadingKey === thumb.key;
 
                   return (
                     <div
                       key={thumb.key}
-                      className="p-4 rounded-xl border border-border bg-card/60 space-y-3 flex flex-col justify-between hover:border-primary/40 transition-colors shadow-sm"
+                      className="p-3 sm:p-4 rounded-xl border border-border bg-card/60 space-y-2.5 flex flex-col justify-between hover:border-border/80 transition-colors shadow-sm"
                     >
                       <div className="space-y-2">
-                        {/* Header Badges */}
-                        <div className="flex items-center justify-between">
-                          <span className="text-sm font-bold text-foreground">
-                            {thumb.name}
-                          </span>
-                          <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold">
-                            {thumb.dimensions}
-                          </span>
-                        </div>
-
-                        {/* Image Preview Box */}
+                        {/* Thumbnail Image */}
                         <div className="relative w-full aspect-video rounded-lg overflow-hidden border border-border bg-black/40">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={thumb.url}
                             alt={thumb.name}
                             className="w-full h-full object-cover"
-                            onError={(e) => {
-                              // If maxres isn't available for very old videos, fallback notice
-                              (e.target as HTMLElement).style.opacity = "0.5";
-                            }}
                           />
                         </div>
 
-                        <p className="text-xs text-muted-foreground">{thumb.qualityDesc}</p>
+                        {/* Compact Metadata Row */}
+                        <div className="flex flex-wrap items-center justify-between gap-1.5 text-xs pt-0.5">
+                          <span className="font-semibold text-foreground">
+                            {thumb.name}
+                          </span>
+                          <div className="flex items-center gap-1.5 text-muted-foreground font-mono text-[11px]">
+                            <span>{thumb.dimensions}</span>
+                            <span>•</span>
+                            <span>{thumb.fileSize}</span>
+                          </div>
+                        </div>
                       </div>
 
-                      {/* Download & Copy Buttons */}
-                      <div className="flex items-center gap-2 pt-2 border-t border-border/60">
+                      {/* Action Buttons */}
+                      <div className="flex items-center justify-end gap-2 pt-2 border-t border-border/50">
+                        <Button
+                          type="button"
+                          variant={isCopied ? "secondary" : "outline"}
+                          size="sm"
+                          onClick={() => handleCopyUrl(thumb.url, thumb.key)}
+                          className="gap-1.5 text-xs h-7 px-2.5"
+                          title="Copy image URL"
+                        >
+                          {isCopied ? (
+                            <>
+                              <Check className="h-3 w-3 text-success" />
+                              <span className="text-success">Copied</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="h-3 w-3" />
+                              <span>Copy</span>
+                            </>
+                          )}
+                        </Button>
+
                         <Button
                           type="button"
                           variant="primary"
                           size="sm"
                           disabled={isDownloading}
                           onClick={() => handleDownloadThumbnail(thumb)}
-                          className="flex-1 gap-1.5 text-xs"
+                          className="gap-1.5 text-xs h-7 px-2.5"
                         >
-                          <Download className="h-3.5 w-3.5" />
-                          <span>{isDownloading ? "Downloading..." : "Download"}</span>
+                          <Download className="h-3 w-3" />
+                          <span>{isDownloading ? "..." : "Download"}</span>
                         </Button>
-
-                        <Button
-                          type="button"
-                          variant={isCopied ? "secondary" : "outline"}
-                          size="sm"
-                          onClick={() => handleCopyUrl(thumb.url, thumb.key)}
-                          className="gap-1.5 text-xs"
-                          title="Copy direct image link"
-                        >
-                          {isCopied ? (
-                            <>
-                              <Check className="h-3.5 w-3.5 text-success" />
-                              <span className="text-success">Copied</span>
-                            </>
-                          ) : (
-                            <>
-                              <Copy className="h-3.5 w-3.5" />
-                              <span>Copy Link</span>
-                            </>
-                          )}
-                        </Button>
-
-                        <a
-                          href={thumb.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex"
-                        >
-                          <Button
-                            type="button"
-                            variant="ghost"
-                            size="icon"
-                            className="h-8 w-8"
-                            title="Open thumbnail in new tab"
-                          >
-                            <ExternalLink className="h-3.5 w-3.5" />
-                          </Button>
-                        </a>
                       </div>
                     </div>
                   );

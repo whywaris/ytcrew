@@ -5,7 +5,7 @@ import { DbAdSlot } from "@/types";
 import { DollarSign, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Ads Manager | YT Crew Admin",
+  title: "Ads Manager",
 };
 
 const DEFAULT_SLOTS = [

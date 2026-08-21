@@ -13,6 +13,16 @@ import { YouTubeVideoBacklinkGenerator } from "@/components/tools/youtube-video-
 import { YouTubeWatchTimeCalculator } from "@/components/tools/youtube-watch-time-calculator";
 import { YouTubeThumbnailDownloader } from "@/components/tools/youtube-thumbnail-downloader";
 import { YouTubeFontGenerator } from "@/components/tools/youtube-font-generator";
+import { YouTubeCategoryChecker } from "@/components/tools/youtube-category-checker";
+import { YouTubeTagExtractor } from "@/components/tools/youtube-tag-extractor";
+import { YouTubeCommentFinder } from "@/components/tools/youtube-comment-finder";
+import { RandomYouTubeCommentPicker } from "@/components/tools/random-youtube-comment-picker";
+import { YouTubeHashtagGenerator } from "@/components/tools/hashtag-generator";
+import { YouTubeRssFeedGenerator } from "@/components/tools/youtube-rss-feed-generator";
+import { YouTubeVideoChapters } from "@/components/tools/youtube-video-chapters";
+import { YouTubeVideoEmbedCodeGenerator } from "@/components/tools/youtube-video-embed-code-generator";
+import { YouTubeVideoQrCode } from "@/components/tools/youtube-video-qr-code";
+import { YouTubePlaylistLengthCalculator } from "@/components/tools/youtube-playlist-length-calculator";
 import { toolDefinitions, ToolDefinitionItem } from "@/lib/tool-definitions";
 import { ToolFAQItem, ToolHowToStep } from "@/types";
 
@@ -26,15 +36,25 @@ interface PageProps {
 const toolComponentRegistry: Record<string, React.ComponentType> = {
   "youtube-timestamp-link-generator": YouTubeTimestampGenerator,
   "youtube-video-frame-by-frame": YouTubeVideoFrameByFrame,
-  "youtube-username-generator": YouTubeUsernameGenerator,
+  "youtube-name-generator": YouTubeUsernameGenerator,
   "fake-youtube-comment-generator": FakeYouTubeCommentGenerator,
   "youtube-banner-resizer": YouTubeBannerResizer,
   "youtube-subscribe-link-generator": YouTubeSubscribeLinkGenerator,
   "youtube-thumbnail-resizer": YouTubeThumbnailResizer,
-  "youtube-video-backlink-generator": YouTubeVideoBacklinkGenerator,
+  "youtube-backlink-generator": YouTubeVideoBacklinkGenerator,
   "youtube-watch-time-calculator": YouTubeWatchTimeCalculator,
   "youtube-thumbnail-downloader": YouTubeThumbnailDownloader,
   "youtube-font-generator": YouTubeFontGenerator,
+  "youtube-category-checker": YouTubeCategoryChecker,
+  "tag-extractor": YouTubeTagExtractor,
+  "youtube-comment-finder": YouTubeCommentFinder,
+  "random-youtube-comment-picker": RandomYouTubeCommentPicker,
+  "hashtag-generator": YouTubeHashtagGenerator,
+  "youtube-rss-feed": YouTubeRssFeedGenerator,
+  "youtube-chapters": YouTubeVideoChapters,
+  "youtube-embed-code-generator": YouTubeVideoEmbedCodeGenerator,
+  "youtube-qr-code": YouTubeVideoQrCode,
+  "youtube-playlist-length-calculator": YouTubePlaylistLengthCalculator,
 };
 
 /**

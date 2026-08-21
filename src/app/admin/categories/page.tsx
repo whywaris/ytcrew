@@ -5,7 +5,7 @@ import { DbCategory } from "@/types";
 import { FolderTree, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Categories | YT Crew Admin",
+  title: "Categories",
 };
 
 export default async function AdminCategoriesPage() {

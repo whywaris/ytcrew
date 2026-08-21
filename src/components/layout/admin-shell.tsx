@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import {
   LayoutDashboard,
   Wrench,
+  Bot,
   BookOpen,
   FolderTree,
   Megaphone,
@@ -51,6 +52,16 @@ export const adminNavItems: AdminNavItem[] = [
     activeBg: "bg-gradient-to-r from-cyan-600/90 via-blue-600 to-indigo-600 text-white font-semibold",
     activeBorder: "border-cyan-400/40",
     activeGlow: "shadow-lg shadow-cyan-500/25",
+  },
+  {
+    name: "Automation Tools",
+    href: "/admin/automation-tools",
+    icon: Bot,
+    accentColor: "text-purple-400",
+    badgeBg: "bg-purple-500/15 text-purple-400 group-hover:bg-purple-500/25 group-hover:text-purple-300",
+    activeBg: "bg-gradient-to-r from-purple-600/90 via-violet-600 to-indigo-600 text-white font-semibold",
+    activeBorder: "border-purple-400/40",
+    activeGlow: "shadow-lg shadow-purple-500/25",
   },
   {
     name: "Manage Blog",

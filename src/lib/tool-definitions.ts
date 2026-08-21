@@ -26,9 +26,9 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
     title: "YouTube Timestamp Link Generator",
     description:
       "Create direct shareable links that start playing any YouTube video at the exact second, minute, or hour you choose.",
-    seoTitle: "YouTube Timestamp Link Generator - Free Online Tool | YT Crew",
+    seoTitle: "YouTube Timestamp Link Generator - Free & Instant",
     seoDescription:
-      "Create direct shareable links that start playing any YouTube video at the exact second, minute, or hour you choose.",
+      "Create a YouTube link that starts at a specific time. Free tool to share videos at the exact moment — no signup required.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -87,8 +87,8 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
           "Inspect YouTube videos frame by frame with precision scrubbing and time seek controls.",
       },
       {
-        slug: "youtube-video-backlink-generator",
-        name: "YouTube Video Backlink Generator",
+        slug: "youtube-backlink-generator",
+        name: "YouTube Backlink Generator",
         shortDescription:
           "Generate embeddable HTML, Markdown, and BBCode backlinks for your YouTube videos.",
       },
@@ -106,12 +106,12 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 1. YouTube Video Frame By Frame
   "youtube-video-frame-by-frame": {
     slug: "youtube-video-frame-by-frame",
-    title: "YouTube Video Frame By Frame Player",
+    title: "YouTube Video Frame by Frame Viewer",
     description:
       "Inspect YouTube videos frame-by-frame with precision sub-second stepping, variable slow-motion speeds, and instant frame timestamp sharing.",
-    seoTitle: "YouTube Video Frame By Frame Player - Step Through Frames Online | YT Crew",
+    seoTitle: "Watch YouTube Videos Frame by Frame Online Free",
     seoDescription:
-      "Analyze and step through any YouTube video frame by frame with precision controls (0.1s and 0.033s), variable slow motion, and instant timestamp link generator.",
+      "Watch any YouTube video frame by frame online — free, fast, and no signup needed. Step through frames precisely to analyze or capture the perfect moment.",
     category: "utilities",
     type: "logic",
     status: "active",
@@ -191,15 +191,15 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
       "Inspecting YouTube videos frame-by-frame is an essential capability for video editors, digital artists, sports analysts, gamers examining hitboxes, and content creators studying competitors' editing techniques. Standard YouTube player keyboard shortcuts often skip several frames at once, making it frustrating to pinpoint crucial micro-moments.\n\nThe YouTube Video Frame By Frame tool by YT Crew provides high-precision sub-second navigation controls directly in your web browser. With dedicated ±33ms (single frame at 30fps) and ±100ms stepper buttons, slow-motion playback ranging from 0.25x to 2x speed, and real-time millisecond readouts, you can dissect any sequence with surgical accuracy.\n\nAll playback processing happens locally on your device without downloading gigabytes of source video. Once you find the exact moment you need, grab a one-click timestamp link to share with your team or audience immediately.",
   },
 
-  // 2. YouTube Username Generator
-  "youtube-username-generator": {
-    slug: "youtube-username-generator",
-    title: "YouTube Username & Handle Generator",
+  // 2. YouTube Name Generator
+  "youtube-name-generator": {
+    slug: "youtube-name-generator",
+    title: "Free YouTube Name Generator",
     description:
       "Generate catchy, memorable, and available YouTube channel names and handle suggestions tailored to your niche and creative style.",
-    seoTitle: "YouTube Username & Handle Generator - Catchy Channel Name Ideas | YT Crew",
+    seoTitle: "YouTube Name Generator | Free YouTube Channel Name Generator",
     seoDescription:
-      "Generate 15+ creative, professional, gaming, and funny YouTube channel name ideas and unique @handle suggestions in seconds. 100% free.",
+      "Generate catchy YouTube channel name ideas instantly. Free tool for creative, professional, or niche-specific names — no signup needed.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -280,9 +280,9 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
     title: "Fake YouTube Comment Generator",
     description:
       "Create pixel-perfect YouTube comment mockups with custom usernames, verified badges, likes, pinned tags, and high-resolution PNG export.",
-    seoTitle: "Fake YouTube Comment Generator - Create Realistic Comment Mockups | YT Crew",
+    seoTitle: "Fake YouTube Comment Generator - Free Mock Comments",
     seoDescription:
-      "Design realistic YouTube comment screenshots and mockups with custom avatars, likes, pinned status, verified badges, and high-res image download. Free online tool.",
+      "Create realistic fake YouTube comments for free. Generate mock comment mockups for entertainment, mockups, or educational use — no signup needed.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -347,8 +347,8 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
           "Format your comment text and video descriptions with bold and stylish Unicode fonts.",
       },
       {
-        slug: "youtube-username-generator",
-        name: "YouTube Username Generator",
+        slug: "youtube-name-generator",
+        name: "YouTube Name Generator",
         shortDescription:
           "Generate authentic YouTube channel names and handle ideas.",
       },
@@ -360,12 +360,12 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 4. YouTube Banner Resizer
   "youtube-banner-resizer": {
     slug: "youtube-banner-resizer",
-    title: "YouTube Banner Resizer (2560 × 1440)",
+    title: "YouTube Banner Resizer",
     description:
       "Resize and crop your channel art to YouTube's official 2560 × 1440 px banner dimensions with real-time mobile and desktop safe-zone guides.",
-    seoTitle: "YouTube Banner Resizer - Resize Channel Art to 2560x1440 Online | YT Crew",
+    seoTitle: "YouTube Banner Resizer - Free Channel Art Resize Tool",
     seoDescription:
-      "Resize, crop, and optimize your YouTube channel banner to the official 2560x1440 px spec with interactive mobile safe area guides (1546x423). Free client-side tool.",
+      "Resize your channel art to YouTube's exact banner dimensions (2560×1440) for free. Adjust, crop, and download instantly — no signup needed.",
     category: "utilities",
     type: "logic",
     status: "active",
@@ -424,8 +424,8 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
           "Resize and crop your custom thumbnails to 1280x720 px (16:9).",
       },
       {
-        slug: "youtube-username-generator",
-        name: "YouTube Username Generator",
+        slug: "youtube-name-generator",
+        name: "YouTube Name Generator",
         shortDescription:
           "Find catchy branding ideas for your YouTube channel.",
       },
@@ -443,12 +443,12 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 5. YouTube Subscribe Link Generator
   "youtube-subscribe-link-generator": {
     slug: "youtube-subscribe-link-generator",
-    title: "YouTube 1-Click Subscribe Link Generator",
+    title: "Free YouTube Subscribe Link Generator",
     description:
       "Create direct subscription deep links that prompt viewers with an automatic 'Confirm Channel Subscription' popup when clicked.",
-    seoTitle: "YouTube Subscribe Link Generator - 1-Click Auto Subscribe Link | YT Crew",
+    seoTitle: "Free YouTube Subscribe Link Generator | YT Crew",
     seoDescription:
-      "Generate auto-confirmation YouTube subscribe links with ?sub_confirmation=1 for your channel handle or ID. Includes embeddable HTML buttons and Markdown badges.",
+      "Create a direct YouTube subscribe link for your channel in seconds. Free tool — share it anywhere and make subscribing effortless for viewers.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -498,6 +498,11 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
         answer:
           "Yes. Our generator produces clean, standalone HTML and CSS button code that can be pasted into any website, blog sidebar, header, or documentation page without requiring third-party scripts.",
       },
+      {
+        question: "Does this tool give me free subscribers?",
+        answer:
+          "No. This tool creates a direct subscribe link to your channel — viewers still need to click the Subscribe button themselves. It does not add fake, bot, or automatic subscribers. It simply removes friction by taking people straight to your channel with the subscribe action ready.",
+      },
     ],
     relatedTools: [
       {
@@ -507,8 +512,8 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
           "Create direct links to specific chapters and highlights in your videos.",
       },
       {
-        slug: "youtube-video-backlink-generator",
-        name: "YouTube Video Backlink Generator",
+        slug: "youtube-backlink-generator",
+        name: "YouTube Backlink Generator",
         shortDescription:
           "Generate HTML and Markdown backlinks to embed your videos on websites.",
       },
@@ -526,12 +531,12 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 6. YouTube Thumbnail Resizer
   "youtube-thumbnail-resizer": {
     slug: "youtube-thumbnail-resizer",
-    title: "YouTube Thumbnail Resizer (1280 × 720)",
+    title: "YouTube Thumbnail Resizer",
     description:
       "Resize and crop any image to YouTube's exact 1280 × 720 px thumbnail standard with 16:9 aspect ratio and under 2MB file optimization.",
-    seoTitle: "YouTube Thumbnail Resizer - Resize Images to 1280x720 Online | YT Crew",
+    seoTitle: "YouTube Thumbnail Resizer - Free 1280x720 Resize Tool",
     seoDescription:
-      "Resize, crop, and optimize your images to YouTube's 1280x720 px (16:9) thumbnail standard with smart blur padding and instant download. 100% free.",
+      "Resize any image to YouTube's exact thumbnail size (1280×720) for free. Fast, easy, and no signup required.",
     category: "utilities",
     type: "logic",
     status: "active",
@@ -606,15 +611,15 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
       "Your video thumbnail is the single most influential factor determining your YouTube Click-Through Rate (CTR). Even the most masterfully produced video will languish with low views if its thumbnail is blurry, distorted by incorrect aspect ratios, or rejected by YouTube due to oversized dimensions.\n\nYouTube requires custom thumbnails to match a 16:9 widescreen ratio with an ideal resolution of 1280 × 720 pixels and a file size under 2MB. When creators take quick screenshots or work with vertical phone recordings, manual resizing often leads to stretched graphics or harsh black borders.\n\nThe YouTube Thumbnail Resizer by YT Crew makes formatting thumbnails effortless. With one-click options for smart cropping, modern aesthetic blur-padding, custom solid backgrounds, and high-fidelity PNG/JPG exports, you can prepare professional thumbnails in seconds.",
   },
 
-  // 7. YouTube Video Backlink Generator
-  "youtube-video-backlink-generator": {
-    slug: "youtube-video-backlink-generator",
-    title: "YouTube Video Backlink Generator",
+  // 7. YouTube Backlink Generator
+  "youtube-backlink-generator": {
+    slug: "youtube-backlink-generator",
+    title: "YouTube Backlink Generator",
     description:
       "Generate SEO-optimized HTML, Markdown, and BBCode embed snippets pointing to your YouTube video to build high-authority external referral traffic.",
-    seoTitle: "YouTube Video Backlink Generator - Embed & Link Code Creator | YT Crew",
+    seoTitle: "Free YouTube Backlink Generator - Boost Video SEO | YT Crew",
     seoDescription:
-      "Generate ready-to-use HTML backlinks, visual thumbnail cards, Markdown links, and forum BBCode for your YouTube videos to boost SEO and views. Free tool.",
+      "Generate free YouTube video backlinks instantly to boost SEO and rankings. Fast, easy, and 100% free — no signup required.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -692,60 +697,59 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 8. YouTube Watch Time Calculator
   "youtube-watch-time-calculator": {
     slug: "youtube-watch-time-calculator",
-    title: "YouTube Watch Time & Monetization Calculator",
+    title: "YouTube Watch Time Calculator",
     description:
-      "Calculate your channel's total watch time hours and track exact progress toward the YouTube Partner Program (YPP) 4,000 public watch hours requirement.",
-    seoTitle: "YouTube Watch Time Calculator - Track 4000 Hours Monetization | YT Crew",
+      "Calculate your channel's total watch time hours, minutes, and seconds based on views and average view duration.",
+    seoTitle: "YouTube Watch Time Calculator - Free & Instant",
     seoDescription:
-      "Calculate total watch time hours from views and average duration. Track your percentage progress toward the 4,000 hours YouTube monetization threshold. Free tool.",
+      "Calculate your total YouTube watch time instantly. Free tool for creators — no signup required.",
     category: "utilities",
     type: "logic",
     status: "active",
     howToSteps: [
       {
         stepNumber: 1,
-        title: "Select Your Calculation Method",
+        title: "Choose Your Calculation Method",
         description:
-          "Choose whether to calculate watch time based on your total video views and average view duration, or enter your accumulated watch hours directly.",
+          "Select whether to calculate watch time from your total views and average view duration, or enter your accumulated watch hours directly.",
       },
       {
         stepNumber: 2,
-        title: "Input Your Channel Metrics",
+        title: "Enter Your Video Metrics",
         description:
-          "Enter your view count and average view duration (minutes and seconds) from your YouTube Studio analytics.",
+          "Input your view count and average view duration (minutes and seconds) from your YouTube Studio analytics.",
       },
       {
         stepNumber: 3,
-        title: "Analyze Your Monetization Progress",
+        title: "View Your Total Watch Time",
         description:
-          "View your total watch hours, percentage progress toward the 4,000-hour threshold, remaining hours needed, and estimated additional views required to qualify.",
+          "See your calculated watch time instantly in hours, minutes, and seconds — ready to reference for content planning or reporting.",
       },
     ],
     faqs: [
       {
-        question: "What is the YouTube Partner Program (YPP) watch time requirement?",
+        question: "How is watch time calculated?",
         answer:
-          "To qualify for YouTube channel monetization via ad revenue (YPP), your channel must accumulate at least 4,000 valid public watch hours within the past 12 consecutive months (365 days), along with at least 1,000 subscribers.",
+          "Watch time is calculated by multiplying your total video views by the average view duration. For example, 25,000 views at an average of 4 minutes 30 seconds equals a specific total watch time in hours.",
       },
       {
-        question: "Do YouTube Shorts views count toward the 4,000 watch hours?",
+        question: "Where do I find my average view duration?",
         answer:
-          "No. Watch time generated from the vertical YouTube Shorts feed does NOT count toward the 4,000 public watch hours requirement. For Shorts creators, YouTube offers an alternative threshold: 10 million valid public Shorts views within the past 90 days.",
+          "You can find this in YouTube Studio under Analytics > Engagement > Average view duration for any video or your entire channel.",
       },
       {
-        question: "Do unlisted, private, or deleted videos count toward watch hours?",
+        question: "Does this tool count Shorts differently than long-form videos?",
         answer:
-          "No. Only watch hours from active, public long-form videos count toward the monetization requirement. Hours from unlisted videos, private videos, deleted videos, or ad campaigns are excluded.",
+          "This calculator uses the view count and average duration you provide, so it works for both Shorts and long-form videos — just enter the correct metrics for whichever content type you're analyzing.",
       },
       {
-        question: "What happens if I don't reach 4,000 hours within 12 months?",
+        question: "Can I use this to estimate future watch time?",
         answer:
-          "The 4,000-hour requirement is calculated on a rolling 365-day window. Watch hours earned more than 365 days ago gradually expire from your count as new hours from the current days are added.",
+          "Yes. You can enter projected view counts and your typical average view duration to estimate how watch time might grow as your video gains more views.",
       },
       {
-        question: "How does this calculator estimate the views needed for monetization?",
-        answer:
-          "The tool calculates your remaining watch time deficit in seconds and divides it by your average view duration in seconds, providing a realistic target for how many additional views you need at your current audience retention rate.",
+        question: "Is this tool free to use?",
+        answer: "Yes, this tool is completely free with no signup required.",
       },
     ],
     relatedTools: [
@@ -753,11 +757,11 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
         slug: "youtube-subscribe-link-generator",
         name: "YouTube Subscribe Link Generator",
         shortDescription:
-          "Create 1-click subscription links to help reach your 1,000 subscriber milestone.",
+          "Create direct 1-click subscription links for your channel.",
       },
       {
-        slug: "youtube-video-backlink-generator",
-        name: "YouTube Video Backlink Generator",
+        slug: "youtube-backlink-generator",
+        name: "YouTube Backlink Generator",
         shortDescription:
           "Build external backlinks to drive high-retention views to your long-form videos.",
       },
@@ -769,18 +773,18 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
       },
     ],
     aboutContent:
-      "Reaching the YouTube Partner Program (YPP) milestone of 4,000 public watch hours in a rolling 12-month period is one of the most exciting achievements for emerging YouTube creators. However, understanding how individual video views and retention metrics translate into total watch hours can be difficult to conceptualize without clear math.\n\nThe YouTube Watch Time & Monetization Calculator by YT Crew provides creators with clear visibility into their monetization trajectory. By analyzing total view counts alongside average audience retention, the calculator breaks down your cumulative watch time in hours and minutes, compares it against the 4,000-hour threshold, and displays a real-time progress bar.\n\nAdditionally, the tool calculates the exact number of additional views you need based on your channel's average duration, helping you set achievable content production goals to reach monetization faster.",
+      "Knowing your total watch time is one of the most useful metrics for understanding how your content actually performs on YouTube. Unlike view count alone, watch time reflects how much total time viewers spend actually watching your videos — a key signal YouTube uses to rank and recommend content.\n\nThe YouTube Watch Time Calculator by YT Crew makes it easy to convert your view count and average view duration into a clear total watch time figure, shown in hours, minutes, and seconds. This is useful for tracking channel growth, comparing performance across videos, or simply understanding your audience's viewing habits.\n\nWhether you're analyzing a single video or estimating totals across your content library, this free calculator gives you an instant, accurate breakdown — no spreadsheets or manual math required.",
   },
 
   // 9. YouTube Thumbnail Downloader
   "youtube-thumbnail-downloader": {
     slug: "youtube-thumbnail-downloader",
-    title: "YouTube Thumbnail Downloader (HD & 4K)",
+    title: "YouTube Thumbnail Downloader",
     description:
       "Download high-resolution YouTube video thumbnails in all available qualities (1080p Full HD, HQ, SD, and Medium) with zero compression loss.",
-    seoTitle: "YouTube Thumbnail Downloader - Download Full HD & 4K Thumbnails | YT Crew",
+    seoTitle: "YouTube Thumbnail Downloader - HD & 4K Free Download",
     seoDescription:
-      "Extract and download high-resolution YouTube thumbnails (1080p, 720p, 480p, SD) from any video URL or Shorts link instantly. 100% free online tool.",
+      "Download YouTube thumbnails in HD, 4K, or any resolution instantly. Free tool — just paste the video link and download.",
     category: "utilities",
     type: "logic",
     status: "active",
@@ -858,12 +862,12 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
   // 10. YouTube Font Generator
   "youtube-font-generator": {
     slug: "youtube-font-generator",
-    title: "YouTube Fancy Font Generator",
+    title: "YouTube Font Generator",
     description:
       "Transform standard text into eye-catching Unicode fonts for your YouTube video titles, descriptions, community posts, and channel about bios.",
-    seoTitle: "YouTube Font Generator - Fancy Text & Unicode Fonts Online | YT Crew",
+    seoTitle: "YouTube Font Generator - Free Stylish Text Fonts",
     seoDescription:
-      "Convert your text into 18+ fancy Unicode font styles (Bold, Cursive, Gothic, Bubble, Small Caps) for YouTube titles, descriptions, and bios. 100% free.",
+      "Generate stylish fonts and fancy text for YouTube instantly. Free tool with 18+ font styles — copy and paste anywhere.",
     category: "generators",
     type: "logic",
     status: "active",
@@ -916,8 +920,8 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
     ],
     relatedTools: [
       {
-        slug: "youtube-username-generator",
-        name: "YouTube Username Generator",
+        slug: "youtube-name-generator",
+        name: "YouTube Name Generator",
         shortDescription:
           "Generate unique and memorable YouTube channel names and handles.",
       },
@@ -937,4 +941,884 @@ export const toolDefinitions: Record<string, ToolDefinitionItem> = {
     aboutContent:
       "In a crowded YouTube ecosystem where billions of videos compete for viewer attention, standing out in notification feeds, search result lists, and community tabs is essential for maximizing click-through rates. While YouTube Studio does not offer built-in rich text formatting options like bold or italics for titles, the Unicode standard makes custom typography possible.\n\nThe YouTube Font Generator by YT Crew converts your plain text into more than 18 distinct Unicode typography styles in real time. From bold modern sans-serif and elegant cursive script to gothic fraktur, circled bubble letters, and small capitals, you can instantly give your channel branding a unique aesthetic.\n\nAll transformations occur instantaneously in your browser with zero external font loading dependencies. Simply type your text, choose your favorite aesthetic style, and copy it directly into your YouTube video titles, descriptions, pinned comments, or channel bio.",
   },
+
+  // 11. YouTube Category Checker
+  "youtube-category-checker": {
+    slug: "youtube-category-checker",
+    title: "YouTube Category Checker",
+    description:
+      "Find the exact official category and internal Category ID assigned to any YouTube video or Short.",
+    seoTitle: "YouTube Category Checker - Find Video Category Free",
+    seoDescription:
+      "Check any YouTube video's category instantly. Free tool to find out what category a video is listed under — no signup required.",
+    category: "utilities",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Paste the YouTube Video URL",
+        description:
+          "Copy any YouTube video, Short, or live stream link and paste it into the input field above.",
+      },
+      {
+        stepNumber: 2,
+        title: "Click 'Find Category'",
+        description:
+          "Our system retrieves the video's snippet metadata directly via the YouTube Data API.",
+      },
+      {
+        stepNumber: 3,
+        title: "View & Copy the Category Name",
+        description:
+          "Discover the official category classification (e.g., Gaming, Education, Science & Technology) along with its numeric Category ID.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Why is knowing a YouTube video's category important?",
+        answer:
+          "YouTube video categories help the recommendation algorithm categorize content and deliver it to relevant audience pools. Inspecting top-ranking competitor videos reveals the category that best serves their niche and CPM monetization tier.",
+      },
+      {
+        question: "Can I check the category of YouTube Shorts?",
+        answer:
+          "Yes! YouTube Shorts share the same internal video categorization schema as standard long-form videos. Simply paste the Short URL or ID into the tool.",
+      },
+      {
+        question: "What are YouTube Category IDs?",
+        answer:
+          "Category IDs are unique numeric identifiers (e.g., 20 for Gaming, 27 for Education, 28 for Science & Technology) used internally by the YouTube Data API to index and group content.",
+      },
+      {
+        question: "Does changing my video's category affect views?",
+        answer:
+          "Category selection informs YouTube's automated classification systems. Choosing an accurate category helps ensure your video is grouped alongside related videos in recommendations and topic browse pages.",
+      },
+      {
+        question: "Is this tool free to use?",
+        answer:
+          "Yes, YT Crew's YouTube Category Checker is 100% free with no registration required. Responses are cached with high-speed Redis to guarantee fast results.",
+      },
+      {
+        question: "Why does YouTube sometimes hide the category on public watch pages?",
+        answer:
+          "YouTube's modern watch interface hides the category metadata from the main UI layout, but it remains accessible via the YouTube Data API. Our tool extracts and translates that data for you instantly.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "tag-extractor",
+        name: "YouTube Tag Extractor",
+        shortDescription:
+          "Extract and inspect hidden SEO meta tags from any YouTube video.",
+      },
+      {
+        slug: "youtube-chapters",
+        name: "YouTube Chapters Finder",
+        shortDescription:
+          "Extract timestamped chapters and section markers from video descriptions.",
+      },
+      {
+        slug: "hashtag-generator",
+        name: "YouTube Hashtag Generator",
+        shortDescription:
+          "Generate targeted hashtags to boost your video's search discovery.",
+      },
+    ],
+    aboutContent:
+      "YouTube organizes billions of videos across distinct content categories such as Gaming, Education, Entertainment, Howto & Style, and Science & Technology. While older versions of YouTube displayed video categories prominently under the description, modern YouTube UI hides this classification from public view.\n\nThe YouTube Category Checker on YT Crew interfaces directly with the official YouTube Data API v3 to retrieve the exact category name and numerical category ID assigned to any public video. Whether you are conducting competitor research, auditing your channel's niche alignment, or optimizing SEO metadata, this tool delivers immediate transparency.\n\nBuilt with an intelligent Upstash Redis caching layer, this tool provides lightning-fast responses while respecting YouTube API limits. Simply enter any valid YouTube link or video ID to view the category, channel details, and publish date.",
+  },
+
+  // 12. YouTube Tag Extractor
+  "tag-extractor": {
+    slug: "tag-extractor",
+    title: "YouTube Tag Extractor",
+    description:
+      "Extract, view, and copy all hidden SEO meta tags used by any public YouTube video or Short.",
+    seoTitle: "Free YouTube Tag Extractor - Extract Video Tags Instantly",
+    seoDescription:
+      "Extract tags from any YouTube video instantly. Free tag extractor tool — copy tags individually or all at once, no signup needed.",
+    category: "seo",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Enter Video URL",
+        description:
+          "Paste the link of the YouTube video whose keyword tags you want to inspect.",
+      },
+      {
+        stepNumber: 2,
+        title: "Extract Tags",
+        description:
+          "Click 'Extract Tags' to query the video's public snippet metadata via YouTube Data API.",
+      },
+      {
+        stepNumber: 3,
+        title: "Copy or Download Tags",
+        description:
+          "Copy individual tag chips with one click, copy all tags as a comma-separated list, or download them as a TXT file.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are YouTube video tags?",
+        answer:
+          "YouTube tags are descriptive keywords creators add in YouTube Studio to help the search algorithm understand content topics and misspellings.",
+      },
+      {
+        question: "Why can't I see tags on the YouTube website directly?",
+        answer:
+          "YouTube does not render tags in the standard video player interface. They are stored inside the page metadata and returned via the YouTube Data API snippet.",
+      },
+      {
+        question: "Why do some videos show 'No Public Tags Found'?",
+        answer:
+          "Adding tags is optional in YouTube Studio. Some creators choose not to add tags, or leave the tags field blank, relying instead on titles and descriptions for search optimization.",
+      },
+      {
+        question: "Can I use competitor tags on my own videos?",
+        answer:
+          "Analyzing high-ranking competitor tags provides valuable keyword research insights. You should use relevant keyword ideas to describe your own unique content accurately.",
+      },
+      {
+        question: "How many tags can I add to a YouTube video?",
+        answer:
+          "YouTube allows up to 500 characters total across all tags combined in YouTube Studio.",
+      },
+      {
+        question: "Is this YouTube Tag Extractor free?",
+        answer:
+          "Yes! YT Crew's Tag Extractor is completely free with unlimited queries, instant clipboard copying, and TXT file export.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "hashtag-generator",
+        name: "YouTube Hashtag Generator",
+        shortDescription:
+          "Generate viral hashtags for your YouTube video descriptions and Shorts.",
+      },
+      {
+        slug: "youtube-category-checker",
+        name: "YouTube Category Checker",
+        shortDescription:
+          "Check the official category classification of any YouTube video.",
+      },
+      {
+        slug: "youtube-backlink-generator",
+        name: "YouTube Backlink Generator",
+        shortDescription:
+          "Generate HTML and Markdown backlink embeds for YouTube videos.",
+      },
+    ],
+    aboutContent:
+      "Keyword research is one of the most vital components of a successful YouTube growth strategy. Discovering which keywords and search phrases top creators in your niche use allows you to optimize your metadata, improve search rankings, and capitalize on suggested video placements.\n\nThe YouTube Tag Extractor by YT Crew queries the YouTube Data API v3 server-side and pulls the complete, raw tags array for any public video. Each tag is displayed as an interactive badge with 1-click clipboard copying, along with bulk comma-separated copying and TXT file downloads.\n\nAll API requests are optimized through an Upstash Redis cache to ensure instantaneous response times and quota resilience. Use this tool to deconstruct competitor SEO tactics, audit your own past uploads, and build comprehensive keyword libraries.",
+  },
+
+  // 13. First YouTube Comment Finder
+  "youtube-comment-finder": {
+    slug: "youtube-comment-finder",
+    title: "First YouTube Comment Finder",
+    description:
+      "Find the earliest and oldest comment ever posted on any YouTube video.",
+    seoTitle: "First YouTube Comment Finder - Free & Instant",
+    seoDescription:
+      "Find the very first comment on any YouTube video instantly. Free tool — no signup required.",
+    category: "utilities",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Copy the YouTube Video Link",
+        description:
+          "Copy the URL of the YouTube video whose very first comment you want to find.",
+      },
+      {
+        stepNumber: 2,
+        title: "Initiate the Search",
+        description:
+          "Click 'Find First Comment' to let our server paginate chronologically through the video's comment threads.",
+      },
+      {
+        stepNumber: 3,
+        title: "View the Oldest Comment",
+        description:
+          "Inspect the author's avatar, username, exact posting timestamp, like count, and comment text in a YouTube-style card.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How does the First Comment Finder work?",
+        answer:
+          "Our server queries YouTube's commentThreads API using chronological ordering ('order=time') and paginates through comment batches to identify the comment with the earliest publication date.",
+      },
+      {
+        question: "Can this tool find the first comment on videos with millions of views?",
+        answer:
+          "For videos with very large comment counts, the YouTube Data API enforces practical pagination limits (capped at up to 500 comments). This tool retrieves the earliest available comment indexed within YouTube API limits.",
+      },
+      {
+        question: "Why would someone want to find the first comment?",
+        answer:
+          "Finding the first comment is popular for internet culture history, creator milestone retrospectives, trivia, and identifying early supporters on viral videos.",
+      },
+      {
+        question: "Does this tool show deleted comments?",
+        answer:
+          "No. YouTube's API only provides comments that are currently active, approved, and publicly visible on the video.",
+      },
+      {
+        question: "What if comments are disabled on the video?",
+        answer:
+          "If the creator turned off comments or set them to private, the YouTube API will return a notice indicating comments are disabled for that video.",
+      },
+      {
+        question: "Is there any cost to use this tool?",
+        answer:
+          "No, the First YouTube Comment Finder on YT Crew is completely free with no signup required.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "random-youtube-comment-picker",
+        name: "Random YouTube Comment Picker",
+        shortDescription:
+          "Randomly pick giveaway winners from YouTube video comments.",
+      },
+      {
+        slug: "fake-youtube-comment-generator",
+        name: "Fake YouTube Comment Generator",
+        shortDescription:
+          "Design customized YouTube comment mockups with avatars and verified badges.",
+      },
+      {
+        slug: "youtube-timestamp-link-generator",
+        name: "YouTube Timestamp Link Generator",
+        shortDescription:
+          "Generate direct links that start playback at specific seconds.",
+      },
+    ],
+    aboutContent:
+      "Ever wondered who wrote the very first comment under a legendary YouTube video or your own classic uploads from years ago? The First YouTube Comment Finder is designed to trace back through time and locate the earliest documented comment on any public YouTube video.\n\nUsing server-side YouTube Data API v3 integration with chronological ordering filters, our system paginates backwards through comment threads to pinpoint the exact author, avatar, timestamp, and message. The result is presented in an authentic YouTube comment layout complete with like counts and direct video reference.\n\nPlease note that for videos with tens or hundreds of thousands of comments, YouTube's Data API imposes practical pagination boundaries (capped at several hundred comments per request cycle) to protect network integrity. Our tool retrieves the oldest available comment within these API boundaries and caches the result via Upstash Redis.",
+  },
+
+  // 14. Random YouTube Comment Picker
+  "random-youtube-comment-picker": {
+    slug: "random-youtube-comment-picker",
+    title: "YouTube Random Comment Picker",
+    description:
+      "Pick fair and transparent random winners from YouTube comments for your giveaways, contests, and promotions.",
+    seoTitle: "YouTube Random Comment Picker - Free Giveaway Tool",
+    seoDescription:
+      "Pick a random comment from any YouTube video instantly. Perfect for giveaways and contests — free, fast, no signup needed.",
+    category: "utilities",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Paste Giveaway Video Link",
+        description:
+          "Enter the URL of your YouTube contest, giveaway, or community challenge video.",
+      },
+      {
+        stepNumber: 2,
+        title: "Configure Options & Filters",
+        description:
+          "Optionally check 'Include replies' or specify a required keyword (such as '#giveaway' or 'enter').",
+      },
+      {
+        stepNumber: 3,
+        title: "Pick Winner & Re-Roll",
+        description:
+          "Click 'Load & Pick Winner' to fetch eligible comments and draw a random winner. Click 'Pick Another' to re-draw instantly from memory.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is this comment picker truly random?",
+        answer:
+          "Yes! The picker uses cryptographically strong random selection algorithms in your browser on the fetched comment pool, ensuring 100% fair and unbiased draws.",
+      },
+      {
+        question: "Can I filter comments by a specific keyword or hashtag?",
+        answer:
+          "Yes. If your contest requires participants to include a specific phrase like '#contest' or 'subscribed', enter it into the keyword filter to only draw from matching comments.",
+      },
+      {
+        question: "Does clicking 'Pick Another' consume more YouTube API quota?",
+        answer:
+          "No! The comment pool is fetched once and kept in your browser session memory. Re-rolling or picking alternative winners draws instantly from the existing pool with zero extra API consumption.",
+      },
+      {
+        question: "Can I exclude replies and only pick from top-level comments?",
+        answer:
+          "Yes. By default, the picker selects only from top-level comments. You can check the 'Include replies' option if your rules allow reply entries.",
+      },
+      {
+        question: "How many comments can the tool load for a draw?",
+        answer:
+          "The tool loads up to 500 eligible comments per fetch, providing a massive representative pool for typical YouTube giveaways and creator contests.",
+      },
+      {
+        question: "Can I copy the winner announcement directly?",
+        answer:
+          "Yes! Click the 'Copy Result' button to copy a pre-formatted winner announcement message ready to paste into your YouTube pinned comments or community posts.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-comment-finder",
+        name: "First YouTube Comment Finder",
+        shortDescription:
+          "Find the earliest and oldest comment on any YouTube video.",
+      },
+      {
+        slug: "fake-youtube-comment-generator",
+        name: "Fake YouTube Comment Generator",
+        shortDescription:
+          "Create realistic YouTube comment graphics for video overlays and thumbnails.",
+      },
+      {
+        slug: "youtube-name-generator",
+        name: "YouTube Name Generator",
+        shortDescription:
+          "Generate catchy YouTube names and handles for new channels.",
+      },
+    ],
+    aboutContent:
+      "Running giveaways and contests on YouTube is one of the most effective methods for boosting subscriber engagement, comment volume, and algorithmic reach. However, picking a winner manually by scrolling through hundreds of comments is tedious and prone to accidental bias.\n\nThe Random YouTube Comment Picker by YT Crew automates the entire giveaway selection process with fairness and transparency. Our tool fetches comment threads securely via the YouTube Data API, filters entries by optional keywords or reply inclusion, and executes a randomized draw with animated visual feedback.\n\nOnce the comment batch is loaded, it is stored in your browser session memory, allowing you to re-roll and pick backup winners instantly without making duplicate API calls. Copy the winner's details with a single click to share in your video descriptions, pinned comments, or social channels.",
+  },
+
+  // 15. YouTube Hashtag Generator
+  "hashtag-generator": {
+    slug: "hashtag-generator",
+    title: "YouTube Hashtag Generator",
+    description:
+      "Generate high-ranking, viral hashtags optimized for YouTube Shorts feeds and search discovery.",
+    seoTitle: "YouTube Hashtag Generator - Free Trending Hashtags",
+    seoDescription:
+      "Generate trending YouTube hashtags for your videos instantly. Free tool to boost discoverability — no signup required.",
+    category: "generators",
+    type: "logic",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Enter Your Main Topic",
+        description:
+          "Type in your primary video subject or keyword (e.g. 'digital marketing', 'gaming setup', 'yoga').",
+      },
+      {
+        stepNumber: 2,
+        title: "Select Category & Format",
+        description:
+          "Choose your content niche (Tech, Gaming, Education, Vlog, etc.) and target format (Shorts vs Universal).",
+      },
+      {
+        stepNumber: 3,
+        title: "Generate & Copy Hashtags",
+        description:
+          "Click 'Generate Hashtags', then copy individual tags or click 'Copy All Hashtags' to paste directly into your YouTube description.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do hashtags help YouTube videos rank?",
+        answer:
+          "Hashtags help YouTube categorize your video topic and group it with related content. Viewers can also click hashtags to discover dedicated hashtag search result feeds.",
+      },
+      {
+        question: "Where should I put hashtags on YouTube?",
+        answer:
+          "Place hashtags at the bottom of your video description, or include 1-2 key hashtags in your video title. For YouTube Shorts, adding #shorts in the title is widely recommended.",
+      },
+      {
+        question: "How many hashtags should I use on a YouTube video?",
+        answer:
+          "YouTube recommends 3 to 15 relevant hashtags per video. The first 3 hashtags in your description appear prominently above your title on mobile. Never use more than 60 hashtags, or YouTube will ignore all of them.",
+      },
+      {
+        question: "What is the difference between YouTube tags and hashtags?",
+        answer:
+          "Tags are hidden backend SEO keywords entered in YouTube Studio, whereas hashtags start with a '#' symbol and are publicly visible in your video description and title.",
+      },
+      {
+        question: "Are these hashtags optimized for YouTube Shorts?",
+        answer:
+          "Yes! Our generator includes dedicated trending and viral Shorts tags like #shorts, #youtubeshorts, and #viral alongside niche-specific combinations.",
+      },
+      {
+        question: "Is this tool completely free?",
+        answer:
+          "Yes, the YouTube Hashtag Generator on YT Crew runs 100% client-side in your browser with unlimited free generations.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "tag-extractor",
+        name: "YouTube Tag Extractor",
+        shortDescription:
+          "Extract backend keyword tags from top-performing competitor videos.",
+      },
+      {
+        slug: "youtube-font-generator",
+        name: "YouTube Fancy Font Generator",
+        shortDescription:
+          "Style your video descriptions and titles with custom Unicode fonts.",
+      },
+      {
+        slug: "youtube-timestamp-link-generator",
+        name: "YouTube Timestamp Link Generator",
+        shortDescription:
+          "Format clean timestamped sections for your YouTube video descriptions.",
+      },
+    ],
+    aboutContent:
+      "Hashtags are a powerful discovery mechanism on modern YouTube, especially across the rapidly growing YouTube Shorts ecosystem. When used strategically, hashtags signal your video's core themes to the algorithm and connect you with viewers browsing specific topic feeds.\n\nThe YouTube Hashtag Generator on YT Crew generates tailored hashtag sets by combining your primary topic keyword with high-velocity search modifiers, current year markers, and curated niche pools (Gaming, Tech, Education, Fitness, Business, and more).\n\nGenerated hashtags are neatly categorized into Targeted Topic Tags, Trending & Shorts Tags, and Niche Community Tags. Copy individual tags with a single tap or grab the entire space-separated collection ready to paste into your YouTube Studio description.",
+  },
+
+  // 16. YouTube RSS Feed Generator
+  "youtube-rss-feed": {
+    slug: "youtube-rss-feed",
+    title: "YouTube RSS Feed Generator",
+    description:
+      "Convert any YouTube channel URL, custom @handle, or Channel ID into an official XML RSS feed link.",
+    seoTitle: "YouTube RSS Feed Generator - Free & Instant",
+    seoDescription:
+      "Get the YouTube RSS feed for any channel instantly. Free tool to generate and copy your channel's RSS feed URL — no signup required.",
+    category: "generators",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Enter Channel Handle or URL",
+        description:
+          "Paste any YouTube channel link (e.g. youtube.com/@veritasium), @handle, or 24-character Channel ID.",
+      },
+      {
+        stepNumber: 2,
+        title: "Generate RSS Feed",
+        description:
+          "Click 'Get RSS Feed'. If a handle is provided, our system resolves the unique Channel ID via YouTube API.",
+      },
+      {
+        stepNumber: 3,
+        title: "Copy & Use in Automations",
+        description:
+          "Copy the direct XML feed URL and paste it into your favorite RSS reader (Feedly, Inoreader), Discord webhook, or Zapier workflow.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is a YouTube RSS feed URL?",
+        answer:
+          "A YouTube RSS feed is an official XML data stream provided by YouTube (https://www.youtube.com/feeds/videos.xml?channel_id=ID) that automatically updates whenever the channel uploads a new public video.",
+      },
+      {
+        question: "Why do I need a Channel ID instead of a handle for RSS?",
+        answer:
+          "YouTube's native RSS feed endpoint requires the 24-character Channel ID (beginning with 'UC'). Our tool automatically translates @handles and custom URLs into their underlying Channel ID for you.",
+      },
+      {
+        question: "What can I do with a YouTube RSS feed?",
+        answer:
+          "You can subscribe to channels in ad-free feed readers (Feedly, Inoreader, NetNewsWire), build Discord notification bots, automate social media cross-posting with Zapier/Make/IFTTT, or embed video feeds on websites.",
+      },
+      {
+        question: "Does the RSS feed update immediately when a video is published?",
+        answer:
+          "Yes! YouTube's RSS feeds update near-instantaneously as soon as a video changes status to public.",
+      },
+      {
+        question: "Does this work for YouTube Shorts and Live Streams?",
+        answer:
+          "Yes, public Shorts and completed live stream recordings are included in the channel's XML RSS feed stream.",
+      },
+      {
+        question: "Is this tool free?",
+        answer:
+          "Yes, the YouTube RSS Feed Generator on YT Crew is 100% free with unlimited lookups and Redis caching.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-embed-code-generator",
+        name: "YouTube Embed Code Generator",
+        shortDescription:
+          "Generate responsive HTML iframe embed codes for your website.",
+      },
+      {
+        slug: "youtube-qr-code",
+        name: "YouTube Video QR Code Generator",
+        shortDescription:
+          "Create scannable QR codes for your YouTube channel and videos.",
+      },
+      {
+        slug: "youtube-subscribe-link-generator",
+        name: "YouTube Subscribe Link Generator",
+        shortDescription:
+          "Generate 1-click subscription confirmation links for your channel.",
+      },
+    ],
+    aboutContent:
+      "RSS (Really Simple Syndication) remains the gold standard for tracking content updates without relying on opaque social media algorithms or notification bell emails. Every YouTube channel has an official, real-time XML RSS feed maintained by YouTube, but accessing it requires knowing the channel's unique 24-character Channel ID.\n\nThe YouTube RSS Feed Generator by YT Crew bridges this gap by automatically converting modern @handles, custom URLs, and channel links into their corresponding canonical Channel IDs. If you provide a direct Channel ID, the tool generates the feed link client-side instantly without any external API calls.\n\nWhether you are setting up Discord server announcements for your community, configuring Zapier automations for multi-platform broadcasting, or curating your personal news feed in Feedly or NetNewsWire, this tool delivers the exact XML link you need in seconds.",
+  },
+
+  // 17. YouTube Chapters Finder
+  "youtube-chapters": {
+    slug: "youtube-chapters",
+    title: "YouTube Chapters Finder",
+    description:
+      "Extract all timestamped chapters, section markers, and direct jump links from any YouTube video.",
+    seoTitle: "YouTube Chapters Finder - Extract Video Timestamps Free",
+    seoDescription:
+      "Instantly extract chapters and timestamps from any YouTube video. Free tool to find section markers — no signup required.",
+    category: "utilities",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Paste YouTube Video Link",
+        description:
+          "Enter the URL of any YouTube video that contains timestamped chapters in its description.",
+      },
+      {
+        stepNumber: 2,
+        title: "Extract Chapters",
+        description:
+          "Click 'Find Chapters' to pull the video's description via the YouTube Data API and parse all timestamp patterns.",
+      },
+      {
+        stepNumber: 3,
+        title: "Copy or Jump to Chapters",
+        description:
+          "Click any timestamp to test playback, copy individual chapter URLs, or copy the entire chapter list for your own notes.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How does YouTube detect video chapters?",
+        answer:
+          "YouTube parses timestamps (in mm:ss or hh:mm:ss format) listed in the video description. If the first timestamp starts at 00:00 and there are at least three chapters of 10+ seconds each, YouTube activates interactive chapter scrubbers.",
+      },
+      {
+        question: "Why should I add chapters to my YouTube videos?",
+        answer:
+          "Chapters improve viewer retention, make long videos easy to navigate, and allow Google search to display rich 'Key Moments' snippets directly on search engine results pages.",
+      },
+      {
+        question: "What happens if a video has no chapters in its description?",
+        answer:
+          "Our tool will show a clear 'No Chapters Detected' message. Some creators rely on YouTube's automated chapters, which are generated dynamically by AI and not stored in description text.",
+      },
+      {
+        question: "Can I copy the extracted chapters to paste into my own video?",
+        answer:
+          "Yes! Click 'Copy All Chapters' to get a clean, properly formatted timestamp list ready to paste directly into your YouTube description.",
+      },
+      {
+        question: "Do the chapter links work on mobile devices?",
+        answer:
+          "Yes. Each chapter link includes the ?t=seconds parameter, which starts playback at that exact second across mobile apps, mobile browsers, and desktop.",
+      },
+      {
+        question: "Is this chapter extractor free?",
+        answer:
+          "Yes, this tool is 100% free with unlimited extractions powered by Redis-cached YouTube API responses.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-timestamp-link-generator",
+        name: "YouTube Timestamp Link Generator",
+        shortDescription:
+          "Create custom timestamped jump links for specific seconds or minutes.",
+      },
+      {
+        slug: "youtube-video-frame-by-frame",
+        name: "YouTube Video Frame By Frame",
+        shortDescription:
+          "Scrub through YouTube video frames with millisecond precision.",
+      },
+      {
+        slug: "tag-extractor",
+        name: "YouTube Tag Extractor",
+        shortDescription:
+          "Inspect keyword tags from top ranking videos in your niche.",
+      },
+    ],
+    aboutContent:
+      "Video chapters segment long videos into digestible, named topics, making tutorials, podcasts, reviews, and webinars significantly easier for viewers to navigate. Moreover, Google Search heavily indexes YouTube video chapters to present interactive 'Key Moments' directly on search results pages, generating extra organic traffic.\n\nThe YouTube Video Chapters Extractor by YT Crew parses YouTube video descriptions using advanced regex timestamp matching (supporting hh:mm:ss and mm:ss formats). It extracts all defined chapters, section names, and calculated second offsets in real time.\n\nEach extracted chapter includes a direct clickable timestamp link, allowing you to jump straight to specific topics or copy individual links to share with collaborators. If you are preparing study notes, creating video summaries, or analyzing how top creators pace their content, this tool simplifies the workflow.",
+  },
+
+  // 18. YouTube Embed Code Generator
+  "youtube-embed-code-generator": {
+    slug: "youtube-embed-code-generator",
+    title: "YouTube Embed Code Generator",
+    description:
+      "Generate custom, fully responsive HTML iframe embed codes with privacy mode, autoplay, looping, and custom start times.",
+    seoTitle: "YouTube Embed Code Generator - Free HTML Iframe Tool",
+    seoDescription:
+      "Generate custom YouTube embed code instantly. Free tool to create responsive HTML iframes for your website — no signup needed.",
+    category: "generators",
+    type: "logic",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Enter Video URL",
+        description:
+          "Paste any YouTube video URL or ID into the configuration input.",
+      },
+      {
+        stepNumber: 2,
+        title: "Customize Embed Options",
+        description:
+          "Toggle responsive CSS wrappers, privacy-enhanced no-cookie domain, autoplay, mute, controls, looping, and start/end times.",
+      },
+      {
+        stepNumber: 3,
+        title: "Preview & Copy Code",
+        description:
+          "Test playback in the live preview player, then copy the generated HTML iframe snippet to paste into your website or blog CMS.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is Privacy-Enhanced Mode (youtube-nocookie.com)?",
+        answer:
+          "Privacy-Enhanced mode uses the youtube-nocookie.com domain, which prevents YouTube from storing tracking cookies on your website visitors' browsers until they actually click play.",
+      },
+      {
+        question: "How do I make my YouTube embed 100% responsive on mobile?",
+        answer:
+          "Leave the 'Responsive Width' option checked. It wraps the iframe in an intrinsic aspect-ratio CSS container (padding-bottom: 56.25%) that automatically resizes to fill any screen width.",
+      },
+      {
+        question: "Why does autoplay not work on some browsers?",
+        answer:
+          "Modern web browsers (Chrome, Safari, Firefox) block unmuted autoplay to protect user experience. To ensure autoplay functions across all browsers, enable the 'Start Muted' option.",
+      },
+      {
+        question: "Can I set custom start and end timestamps in the embed?",
+        answer:
+          "Yes. Enter start and end times in seconds to restrict playback to a specific segment of the video.",
+      },
+      {
+        question: "Will this embed code work on WordPress, Webflow, and Shopify?",
+        answer:
+          "Yes! The generated HTML iframe code is universal standard HTML that works across all CMS platforms, static sites, and React/Next.js applications.",
+      },
+      {
+        question: "Is this tool free?",
+        answer:
+          "Yes, the YouTube Embed Code Generator on YT Crew is completely free with client-side execution.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-backlink-generator",
+        name: "YouTube Backlink Generator",
+        shortDescription:
+          "Create HTML, Markdown, and BBCode embed links for forums and blogs.",
+      },
+      {
+        slug: "youtube-qr-code",
+        name: "YouTube Video QR Code Generator",
+        shortDescription:
+          "Generate scannable QR codes for physical flyers, posters, and merchandise.",
+      },
+      {
+        slug: "youtube-timestamp-link-generator",
+        name: "YouTube Timestamp Link Generator",
+        shortDescription:
+          "Generate direct links that begin playback at specific timestamps.",
+      },
+    ],
+    aboutContent:
+      "Embedding YouTube videos on blogs, landing pages, documentation, and portfolio websites is one of the best ways to engage visitors and keep them on your site longer. However, the default embed code provided by YouTube is fixed-dimension and lacks customization for mobile responsiveness or privacy compliance.\n\nThe YouTube Video Embed Code Generator by YT Crew lets you configure advanced playback parameters and generates clean, modern HTML5 iframe markup. You can enable GDPR-friendly privacy-enhanced mode (youtube-nocookie.com), mobile-ready responsive 16:9 CSS wrappers, muted autoplay, start/end timestamps, and player control toggles.\n\nA live interactive preview player updates instantly as you adjust options, ensuring your embed looks and behaves exactly as intended before you publish it to your website.",
+  },
+
+  // 19. YouTube Video QR Code Generator
+  "youtube-qr-code": {
+    slug: "youtube-qr-code",
+    title: "YouTube Video QR Code Generator",
+    description:
+      "Create high-resolution, scannable QR codes for your YouTube videos, Shorts, live streams, or channel links.",
+    seoTitle: "YouTube QR Code Generator - Free Video & Channel QR Codes",
+    seoDescription:
+      "Create free QR codes for any YouTube video or channel. Instantly generate scannable codes — perfect for sharing, print, or promotions.",
+    category: "generators",
+    type: "logic",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Enter YouTube Link",
+        description:
+          "Paste any YouTube video, Short, playlist, or channel URL into the input field.",
+      },
+      {
+        stepNumber: 2,
+        title: "Customize QR Code Style",
+        description:
+          "Select your desired image resolution (up to 1024px Ultra HD), foreground/background colors, and error correction level.",
+      },
+      {
+        stepNumber: 3,
+        title: "Download PNG",
+        description:
+          "Click 'Download PNG' to save your high-resolution QR code image ready for print materials, flyers, or video end screens.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do QR codes for YouTube videos ever expire?",
+        answer:
+          "No. Our QR codes are static and direct, encoding the raw YouTube URL into the pattern. They will work indefinitely as long as the YouTube video remains public.",
+      },
+      {
+        question: "What resolution is best for printing QR codes on posters or merchandise?",
+        answer:
+          "We recommend selecting 'Large (512x512)' or 'Ultra HD (1024x1024)' for high-DPI print production on posters, flyers, banners, and business cards.",
+      },
+      {
+        question: "What is QR Code Error Correction Level?",
+        answer:
+          "Error correction allows the QR code to be scanned successfully even if part of the code is smudged, covered, or damaged. Higher levels (Q and H) provide up to 30% damage recovery.",
+      },
+      {
+        question: "Will scanning the QR code open the official YouTube app on mobile phones?",
+        answer:
+          "Yes! iOS and Android devices automatically detect YouTube links and open the video directly in the native YouTube app for an optimal viewing experience.",
+      },
+      {
+        question: "Can I generate QR codes for YouTube Shorts and Channel links?",
+        answer:
+          "Yes. You can generate QR codes for any YouTube URL format, including channel links, Shorts, playlists, and live streams.",
+      },
+      {
+        question: "Is there any cost to create QR codes?",
+        answer:
+          "No, the YouTube Video QR Code Generator on YT Crew is 100% free with unlimited generation and no watermarks.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-subscribe-link-generator",
+        name: "YouTube Subscribe Link Generator",
+        shortDescription:
+          "Create 1-click subscription confirmation links to pair with your QR codes.",
+      },
+      {
+        slug: "youtube-embed-code-generator",
+        name: "YouTube Embed Code Generator",
+        shortDescription:
+          "Generate responsive HTML embed codes for websites and blogs.",
+      },
+      {
+        slug: "youtube-thumbnail-downloader",
+        name: "YouTube Thumbnail Downloader",
+        shortDescription:
+          "Download full 1080p HD YouTube thumbnail images.",
+      },
+    ],
+    aboutContent:
+      "Connecting offline audiences to your digital YouTube content has never been easier than with direct scannable QR codes. Whether you are promoting a music video on tour posters, linking product tutorial videos from packaging, displaying video links on business cards, or adding scan-to-watch codes on merchandise, QR codes provide frictionless 1-tap mobile access.\n\nThe YouTube Video QR Code Generator by YT Crew encodes any YouTube video, Short, or channel URL into a sharp, high-density matrix. With customizable output dimensions up to 1024px Ultra HD, adjustable color palettes, and robust Reed-Solomon error correction, your QR codes will scan reliably in all lighting and print conditions.\n\nAll generation is processed securely and directly in your browser using pure client-side canvas rendering. Download your completed QR code as a transparent-ready PNG with no sign-ups, no tracking redirects, and no expiration limits.",
+  },
+  "youtube-playlist-length-calculator": {
+    slug: "youtube-playlist-length-calculator",
+    title: "YouTube Playlist Length Calculator",
+    description:
+      "Calculate the exact total duration, average video length, and playback speed watch times for any public YouTube playlist.",
+    seoTitle: "YouTube Playlist Length Calculator - Free & Instant",
+    seoDescription:
+      "Calculate the total duration of any YouTube playlist instantly. See watch time at different playback speeds — free, fast, no signup needed.",
+    category: "calculators",
+    type: "youtube_api",
+    status: "active",
+    howToSteps: [
+      {
+        stepNumber: 1,
+        title: "Paste Playlist URL or ID",
+        description:
+          "Copy and paste any public YouTube playlist link (e.g., youtube.com/playlist?list=PL...) or raw Playlist ID into the search bar.",
+      },
+      {
+        stepNumber: 2,
+        title: "Calculate Total Duration",
+        description:
+          "Click 'Calculate Length' to fetch every video's exact duration and tally the total playlist runtime in real time.",
+      },
+      {
+        stepNumber: 3,
+        title: "Analyze Speeds & Copy Summary",
+        description:
+          "Explore the total watch time in days, hours, and minutes, see average video length, compare 1.25x–2.0x playback speeds, and copy the full summary.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How does the YouTube Playlist Length Calculator work?",
+        answer:
+          "Our tool queries the official YouTube Data API v3 to retrieve all video items inside your playlist, fetches the precise ISO 8601 runtime duration for each video, and sums them up into total seconds. It then converts this into days, hours, minutes, and seconds along with playback speed adjustments.",
+      },
+      {
+        question: "Can I calculate the length of a private or unlisted playlist?",
+        answer:
+          "You can calculate the length of unlisted playlists if you have their shareable link or playlist ID. However, private playlists cannot be accessed by the YouTube API without account authentication.",
+      },
+      {
+        question: "Is there a limit on how many videos can be calculated?",
+        answer:
+          "Our calculator automatically paginates through playlists with up to 500 videos (10 full pages of 50 items each) to provide comprehensive watch time data while respecting API quota limits.",
+      },
+      {
+        question: "How are playback speed watch times calculated?",
+        answer:
+          "Playback speeds (1.25x, 1.5x, 1.75x, and 2.0x) divide the playlist's total runtime seconds by the chosen speed multiplier. For example, watching a 10-hour playlist at 2.0x speed cuts the total required viewing time to exactly 5 hours, saving you 5 full hours.",
+      },
+      {
+        question: "What happens if a playlist contains deleted or private videos?",
+        answer:
+          "Deleted and private videos inside a public playlist do not provide duration metadata through the YouTube API. Our tool detects these unavailable videos, displays a count of skipped items, and accurately calculates the total runtime of all accessible videos.",
+      },
+      {
+        question: "Is this playlist calculator free to use?",
+        answer:
+          "Yes! The YouTube Playlist Length Calculator on YT Crew is 100% free with unlimited calculations and no registration required.",
+      },
+    ],
+    relatedTools: [
+      {
+        slug: "youtube-watch-time-calculator",
+        name: "YouTube Watch Time Calculator",
+        shortDescription:
+          "Track 4,000 public watch hours progress for YouTube Partner Program monetization.",
+      },
+      {
+        slug: "youtube-timestamp-link-generator",
+        name: "YouTube Timestamp Link Generator",
+        shortDescription:
+          "Create direct links that start playing YouTube videos at specific timestamps.",
+      },
+      {
+        slug: "youtube-chapters",
+        name: "YouTube Chapters Finder",
+        shortDescription:
+          "Format clean timestamped video chapters and descriptions for YouTube uploads.",
+      },
+    ],
+    aboutContent:
+      "Whether you are planning to binge-watch a comprehensive educational course, prep for certification exams, review a podcast series, or analyze your competitor's content library, knowing the total duration of a YouTube playlist is essential for managing your time.\n\nThe YouTube Playlist Length Calculator by YT Crew analyzes any public or unlisted playlist to deliver instant, down-to-the-second duration statistics. Beyond the total runtime, the tool calculates average video duration and generates an interactive playback speed matrix showing your exact watch time at 1.25x, 1.5x, 1.75x, and 2.0x speeds.\n\nBuilt on real-time server-side YouTube Data API integration, our tool handles large playlists with automatic pagination, accounts for unavailable or deleted videos, and gives you a one-click summary export for study plans, curriculum planning, and video production scheduling.",
+  },
 };
+
+

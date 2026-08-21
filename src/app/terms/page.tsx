@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | YT Crew",
+  title: "Terms of Service",
   description:
     "Read the YT Crew Terms of Service regarding acceptable use, intellectual property, service disclaimers, and user obligations when using our platform.",
 };

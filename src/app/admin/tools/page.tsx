@@ -5,7 +5,7 @@ import { DbTool, DbCategory } from "@/types";
 import { Wrench, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Manage Tools | YT Crew Admin",
+  title: "Manage Tools",
 };
 
 export default async function AdminManageToolsPage() {
