@@ -208,15 +208,39 @@ export default async function SingleBlogPostPage({ params }: PageProps) {
         {/* 3. LAYOUT BELOW HERO (Left TOC Sidebar + Main Content + Right Sticky Share Stack) */}
         <div className={`container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl ${post.featured_image ? "pt-8 sm:pt-12" : "pt-10 sm:pt-14"}`}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-            {/* Left Sidebar (3 Cols on Desktop): Sticky "On this page" TOC + Related Guides */}
-            <aside className="order-2 lg:order-1 lg:col-span-3 space-y-6 lg:sticky lg:top-24">
-              {/* 1. On this page (Table of Contents) */}
-              {toc.length > 0 && <TableOfContents items={toc} />}
+            {/* 1. On this page (Table of Contents) - Mobile: Top (order-1) | Desktop: Left Column Top (col-span-3) */}
+            {toc.length > 0 && (
+              <div className="order-1 lg:order-1 lg:col-span-3 lg:col-start-1 lg:sticky lg:top-24">
+                <TableOfContents items={toc} />
+              </div>
+            )}
 
+            {/* 2. Center Column (8 Cols on Desktop): Article Body - Mobile: Middle (order-2) */}
+            <article className={`order-2 lg:order-2 lg:col-span-8 lg:col-start-4 lg:row-start-1 ${toc.length > 0 ? "lg:row-span-2" : ""} space-y-8 min-w-0`}>
+              {/* Article Section 1 (First Half) */}
+              <div
+                className="blog-content-body prose prose-invert max-w-none text-foreground leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: beforeAd }}
+              />
+
+              {/* In-Article / Blog Content Ad Placement (Middle of Article) */}
+              <AdSlot slotName="blog_content" />
+
+              {/* Article Section 2 (Second Half) */}
+              {afterAd && (
+                <div
+                  className="blog-content-body prose prose-invert max-w-none text-foreground leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: afterAd }}
+                />
+              )}
+            </article>
+
+            {/* 3. Left Sidebar Extras (Ad + Related Posts) - Mobile: Bottom (order-3) | Desktop: Left Column below TOC */}
+            <aside className="order-3 lg:order-1 lg:col-span-3 lg:col-start-1 space-y-6">
               {/* Sidebar Ad Placement */}
               <AdSlot slotName="sidebar" />
 
-              {/* 2. Related Posts Card */}
+              {/* Related Posts Card */}
               {relatedPosts.length > 0 && (
                 <div className="p-5 rounded-2xl border border-border bg-card/80 backdrop-blur-md space-y-4">
                   <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-foreground pb-2 border-b border-border/60">
@@ -261,29 +285,8 @@ export default async function SingleBlogPostPage({ params }: PageProps) {
               )}
             </aside>
 
-            {/* Center Column (8 Cols on Desktop): Article Body */}
-            <article className="order-1 lg:order-2 lg:col-span-8 space-y-8 min-w-0">
-              {/* Article Section 1 (First Half) */}
-              <div
-                className="blog-content-body prose prose-invert max-w-none text-foreground leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: beforeAd }}
-              />
-
-              {/* In-Article / Blog Content Ad Placement (Middle of Article) */}
-              <AdSlot slotName="blog_content" />
-
-              {/* Article Section 2 (Second Half) */}
-              {afterAd && (
-                <div
-                  className="blog-content-body prose prose-invert max-w-none text-foreground leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: afterAd }}
-                />
-              )}
-
-            </article>
-
-            {/* Right Column (1 Col on Desktop): Floating Sticky Social Share Stack */}
-            <aside className="hidden lg:flex lg:order-3 lg:col-span-1 justify-center lg:sticky lg:top-28">
+            {/* 4. Right Column (1 Col on Desktop): Floating Sticky Social Share Stack */}
+            <aside className="hidden lg:flex lg:order-3 lg:col-span-1 lg:col-start-12 lg:row-start-1 justify-center lg:sticky lg:top-28">
               <SocialShare
                 url={articleUrl}
                 title={post.title}

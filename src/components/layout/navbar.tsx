@@ -29,6 +29,8 @@ export function Navbar() {
           <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
             <svg
               className="h-5 w-5 fill-current"
+              width={20}
+              height={20}
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

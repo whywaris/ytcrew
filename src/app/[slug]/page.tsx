@@ -2,27 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { createPublicClient } from "@/lib/supabase/server";
 import { ToolPageTemplate } from "@/components/tools/ToolPageTemplate";
-import { YouTubeTimestampGenerator } from "@/components/tools/youtube-timestamp-generator";
-import { YouTubeVideoFrameByFrame } from "@/components/tools/youtube-video-frame-by-frame";
-import { YouTubeUsernameGenerator } from "@/components/tools/youtube-username-generator";
-import { FakeYouTubeCommentGenerator } from "@/components/tools/fake-youtube-comment-generator";
-import { YouTubeBannerResizer } from "@/components/tools/youtube-banner-resizer";
-import { YouTubeSubscribeLinkGenerator } from "@/components/tools/youtube-subscribe-link-generator";
-import { YouTubeThumbnailResizer } from "@/components/tools/youtube-thumbnail-resizer";
-import { YouTubeVideoBacklinkGenerator } from "@/components/tools/youtube-video-backlink-generator";
-import { YouTubeWatchTimeCalculator } from "@/components/tools/youtube-watch-time-calculator";
-import { YouTubeThumbnailDownloader } from "@/components/tools/youtube-thumbnail-downloader";
-import { YouTubeFontGenerator } from "@/components/tools/youtube-font-generator";
-import { YouTubeCategoryChecker } from "@/components/tools/youtube-category-checker";
-import { YouTubeTagExtractor } from "@/components/tools/youtube-tag-extractor";
-import { YouTubeCommentFinder } from "@/components/tools/youtube-comment-finder";
-import { RandomYouTubeCommentPicker } from "@/components/tools/random-youtube-comment-picker";
-import { YouTubeHashtagGenerator } from "@/components/tools/hashtag-generator";
-import { YouTubeRssFeedGenerator } from "@/components/tools/youtube-rss-feed-generator";
-import { YouTubeVideoChapters } from "@/components/tools/youtube-video-chapters";
-import { YouTubeVideoEmbedCodeGenerator } from "@/components/tools/youtube-video-embed-code-generator";
-import { YouTubeVideoQrCode } from "@/components/tools/youtube-video-qr-code";
-import { YouTubePlaylistLengthCalculator } from "@/components/tools/youtube-playlist-length-calculator";
+import dynamic from "next/dynamic";
 import { toolDefinitions, ToolDefinitionItem } from "@/lib/tool-definitions";
 import { ToolFAQItem, ToolHowToStep } from "@/types";
 
@@ -30,31 +10,101 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+const ToolSkeleton = () => (
+  <div className="p-8 rounded-2xl bg-card border border-border/60 animate-pulse flex items-center justify-center min-h-[280px]">
+    <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-r-transparent" />
+  </div>
+);
+
 /**
  * Registry of interactive client components mapped to tool slugs.
+ * Code-split via next/dynamic to ensure pages only download JS for their active tool.
  */
 const toolComponentRegistry: Record<string, React.ComponentType> = {
-  "youtube-timestamp-link-generator": YouTubeTimestampGenerator,
-  "youtube-video-frame-by-frame": YouTubeVideoFrameByFrame,
-  "youtube-name-generator": YouTubeUsernameGenerator,
-  "fake-youtube-comment-generator": FakeYouTubeCommentGenerator,
-  "youtube-banner-resizer": YouTubeBannerResizer,
-  "youtube-subscribe-link-generator": YouTubeSubscribeLinkGenerator,
-  "youtube-thumbnail-resizer": YouTubeThumbnailResizer,
-  "youtube-backlink-generator": YouTubeVideoBacklinkGenerator,
-  "youtube-watch-time-calculator": YouTubeWatchTimeCalculator,
-  "youtube-thumbnail-downloader": YouTubeThumbnailDownloader,
-  "youtube-font-generator": YouTubeFontGenerator,
-  "youtube-category-checker": YouTubeCategoryChecker,
-  "tag-extractor": YouTubeTagExtractor,
-  "youtube-comment-finder": YouTubeCommentFinder,
-  "random-youtube-comment-picker": RandomYouTubeCommentPicker,
-  "hashtag-generator": YouTubeHashtagGenerator,
-  "youtube-rss-feed": YouTubeRssFeedGenerator,
-  "youtube-chapters": YouTubeVideoChapters,
-  "youtube-embed-code-generator": YouTubeVideoEmbedCodeGenerator,
-  "youtube-qr-code": YouTubeVideoQrCode,
-  "youtube-playlist-length-calculator": YouTubePlaylistLengthCalculator,
+  "youtube-timestamp-link-generator": dynamic(
+    () => import("@/components/tools/youtube-timestamp-generator").then((m) => m.YouTubeTimestampGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-video-frame-by-frame": dynamic(
+    () => import("@/components/tools/youtube-video-frame-by-frame").then((m) => m.YouTubeVideoFrameByFrame),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-name-generator": dynamic(
+    () => import("@/components/tools/youtube-username-generator").then((m) => m.YouTubeUsernameGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "fake-youtube-comment-generator": dynamic(
+    () => import("@/components/tools/fake-youtube-comment-generator").then((m) => m.FakeYouTubeCommentGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-banner-resizer": dynamic(
+    () => import("@/components/tools/youtube-banner-resizer").then((m) => m.YouTubeBannerResizer),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-subscribe-link-generator": dynamic(
+    () => import("@/components/tools/youtube-subscribe-link-generator").then((m) => m.YouTubeSubscribeLinkGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-thumbnail-resizer": dynamic(
+    () => import("@/components/tools/youtube-thumbnail-resizer").then((m) => m.YouTubeThumbnailResizer),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-backlink-generator": dynamic(
+    () => import("@/components/tools/youtube-video-backlink-generator").then((m) => m.YouTubeVideoBacklinkGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-watch-time-calculator": dynamic(
+    () => import("@/components/tools/youtube-watch-time-calculator").then((m) => m.YouTubeWatchTimeCalculator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-thumbnail-downloader": dynamic(
+    () => import("@/components/tools/youtube-thumbnail-downloader").then((m) => m.YouTubeThumbnailDownloader),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-font-generator": dynamic(
+    () => import("@/components/tools/youtube-font-generator").then((m) => m.YouTubeFontGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-category-checker": dynamic(
+    () => import("@/components/tools/youtube-category-checker").then((m) => m.YouTubeCategoryChecker),
+    { loading: ToolSkeleton }
+  ),
+  "tag-extractor": dynamic(
+    () => import("@/components/tools/youtube-tag-extractor").then((m) => m.YouTubeTagExtractor),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-comment-finder": dynamic(
+    () => import("@/components/tools/youtube-comment-finder").then((m) => m.YouTubeCommentFinder),
+    { loading: ToolSkeleton }
+  ),
+  "random-youtube-comment-picker": dynamic(
+    () => import("@/components/tools/random-youtube-comment-picker").then((m) => m.RandomYouTubeCommentPicker),
+    { loading: ToolSkeleton }
+  ),
+  "hashtag-generator": dynamic(
+    () => import("@/components/tools/hashtag-generator").then((m) => m.YouTubeHashtagGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-rss-feed": dynamic(
+    () => import("@/components/tools/youtube-rss-feed-generator").then((m) => m.YouTubeRssFeedGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-chapters": dynamic(
+    () => import("@/components/tools/youtube-video-chapters").then((m) => m.YouTubeVideoChapters),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-embed-code-generator": dynamic(
+    () => import("@/components/tools/youtube-video-embed-code-generator").then((m) => m.YouTubeVideoEmbedCodeGenerator),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-qr-code": dynamic(
+    () => import("@/components/tools/youtube-video-qr-code").then((m) => m.YouTubeVideoQrCode),
+    { loading: ToolSkeleton }
+  ),
+  "youtube-playlist-length-calculator": dynamic(
+    () => import("@/components/tools/youtube-playlist-length-calculator").then((m) => m.YouTubePlaylistLengthCalculator),
+    { loading: ToolSkeleton }
+  ),
 };
 
 /**

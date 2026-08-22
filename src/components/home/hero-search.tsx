@@ -157,6 +157,7 @@ export function HeroSearch({ fallbackTools = [] }: HeroSearchProps) {
         <input
           ref={inputRef}
           type="text"
+          role="combobox"
           value={query}
           onChange={(e) => {
             setQuery(e.target.value);
@@ -171,7 +172,9 @@ export function HeroSearch({ fallbackTools = [] }: HeroSearchProps) {
           aria-label="Search YouTube tools"
           aria-expanded={isOpen}
           aria-autocomplete="list"
-          className="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/[0.08] backdrop-blur-md border border-white/15 text-white placeholder:text-white/50 text-base sm:text-lg focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/20 focus:bg-white/[0.12] shadow-xl shadow-black/25 transition-all"
+          aria-haspopup="listbox"
+          aria-controls={isOpen && suggestions.length > 0 ? "search-suggestions-list" : undefined}
+          className="w-full h-14 pl-12 pr-12 rounded-2xl bg-white/[0.08] backdrop-blur-md border border-white/15 text-white placeholder:text-white/50 text-base sm:text-lg focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 focus:bg-white/[0.12] shadow-xl shadow-black/25 transition-all"
         />
 
         {query && (
@@ -193,7 +196,12 @@ export function HeroSearch({ fallbackTools = [] }: HeroSearchProps) {
 
       {/* Live Suggestions Dropdown */}
       {isOpen && query.trim().length > 0 && (
-        <div className="absolute left-0 right-0 top-full mt-2 z-50 rounded-2xl bg-[#121218]/95 backdrop-blur-xl border border-white/15 shadow-2xl overflow-hidden text-left p-1.5 animate-in fade-in-50 zoom-in-95 duration-150">
+        <div
+          id="search-suggestions-list"
+          role="listbox"
+          aria-label="Search suggestions"
+          className="absolute left-0 right-0 top-full mt-2 z-50 rounded-2xl bg-[#121218]/95 backdrop-blur-xl border border-white/15 shadow-2xl overflow-hidden text-left p-1.5 animate-in fade-in-50 zoom-in-95 duration-150"
+        >
           {suggestions.length > 0 ? (
             <div className="space-y-0.5">
               <div className="px-3 py-1.5 text-[11px] font-semibold text-white/50 tracking-wider uppercase">
@@ -205,11 +213,13 @@ export function HeroSearch({ fallbackTools = [] }: HeroSearchProps) {
                   <button
                     key={tool.slug}
                     type="button"
+                    role="option"
+                    aria-selected={isSelected}
                     onClick={() => handleSelect(tool.slug)}
                     onMouseEnter={() => setSelectedIndex(index)}
                     className={`w-full flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl transition-all text-left cursor-pointer group ${
                       isSelected
-                        ? "bg-primary/20 text-white border border-primary/30"
+                        ? "bg-indigo-600/30 text-white border border-indigo-500/40"
                         : "hover:bg-white/[0.06] text-white"
                     }`}
                   >

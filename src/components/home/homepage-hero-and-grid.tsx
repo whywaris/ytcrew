@@ -196,9 +196,9 @@ function CompactToolCard({ tool }: { tool: ToolItem }) {
         <Icon className="h-5 w-5" />
       </div>
       <div className="min-w-0 flex-1">
-        <h4 className="font-bold text-sm text-foreground group-hover:text-indigo-400 transition-colors truncate">
+        <h3 className="font-bold text-sm text-foreground group-hover:text-indigo-400 transition-colors truncate">
           {tool.title}
-        </h4>
+        </h3>
         <p className="text-xs text-muted-foreground truncate leading-relaxed mt-0.5">
           {tool.short_description || "High-performance YouTube creator utility"}
         </p>
@@ -304,7 +304,7 @@ export function HomepageHeroAndGrid({ tools, categories }: HomepageHeroAndGridPr
           {/* Main H1 Headline */}
           <div className="space-y-4">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12] max-w-3xl mx-auto">
-              <span className="text-[#6366F1]">Free SEO</span> YouTube Tools to Grow Your Channel
+              <span className="text-indigo-400">Free SEO</span> YouTube Tools to Grow Your Channel
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[#A1A1AA] max-w-2xl mx-auto leading-relaxed">
               Everything a YouTube creator needs to rank higher, save time, and grow faster — zero cost, zero hassle.
@@ -411,12 +411,12 @@ export function HomepageHeroAndGrid({ tools, categories }: HomepageHeroAndGridPr
                         <div className="p-1.5 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                           <CategoryIcon className="h-4 w-4" />
                         </div>
-                        <h3 className="text-lg sm:text-xl font-bold tracking-tight text-foreground flex items-center gap-2">
+                        <h2 className="text-lg sm:text-xl font-bold tracking-tight text-foreground flex items-center gap-2">
                           <span>{category.name}</span>
                           <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                             {categoryTools.length} {categoryTools.length === 1 ? "tool" : "tools"}
                           </span>
-                        </h3>
+                        </h2>
                       </div>
 
                       {/* View All Link */}

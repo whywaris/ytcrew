@@ -4,17 +4,32 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { GoogleAnalytics } from "@/components/analytics/google-analytics";
+import { AhrefsAnalytics } from "@/components/analytics/ahrefs-analytics";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
+  adjustFontFallback: true,
+  fallback: [
+    "system-ui",
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Segoe UI",
+    "Roboto",
+    "Helvetica Neue",
+    "sans-serif",
+  ],
+  preload: true,
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   display: "swap",
+  adjustFontFallback: true,
+  fallback: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -42,6 +57,7 @@ export default function RootLayout({
           <AnnouncementBar />
           {children}
           <GoogleAnalytics />
+          <AhrefsAnalytics />
         </ThemeProvider>
       </body>
     </html>

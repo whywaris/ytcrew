@@ -59,7 +59,7 @@ export function NewsletterForm() {
 
   if (status === "success") {
     return (
-      <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs flex items-center gap-2 animate-in fade-in duration-200">
+      <div className="min-h-[42px] p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs flex items-center gap-2 animate-in fade-in duration-200">
         <CheckCircle2 className="h-4 w-4 shrink-0" />
         <span className="font-medium">Thanks for subscribing!</span>
       </div>
@@ -67,7 +67,7 @@ export function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-2">
+    <form onSubmit={handleSubmit} className="space-y-2 min-h-[42px]">
       <div className="flex flex-col sm:flex-row gap-2">
         <input
           type="email"
@@ -80,12 +80,12 @@ export function NewsletterForm() {
           placeholder="Enter your email"
           aria-label="Email address"
           required
-          className="w-full px-3.5 py-2 text-xs rounded-xl bg-secondary/50 border border-border/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary disabled:opacity-50"
+          className="w-full px-3.5 py-2 text-xs rounded-xl bg-secondary/50 border border-border/80 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 disabled:opacity-50"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className="px-4 py-2 text-xs font-semibold rounded-xl bg-primary text-white hover:bg-primary/90 transition-colors disabled:opacity-50 flex items-center justify-center shrink-0 cursor-pointer shadow-xs"
+          className="px-4 py-2 text-xs font-semibold rounded-xl bg-indigo-600 text-white hover:bg-indigo-500 active:bg-indigo-700 transition-colors disabled:opacity-50 flex items-center justify-center shrink-0 cursor-pointer shadow-xs"
         >
           {status === "loading" ? (
             <Loader2 className="h-3.5 w-3.5 animate-spin" />
